@@ -18,7 +18,7 @@
     --red: #5e0000;
     --red-light:#ff0000;
     --custom-trait:#61180e;
-    --green: #91a82a;
+    --green: #ffffff;
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
     --rpg-styled-ui-color: #837360;
@@ -483,7 +483,7 @@ div#scrollToBottom {
 div#scrollToBottom:hover {
     color:#0e0e0e;
     transition: background-color 0.15s ease-in-out;
-    background-color: #91a82a;
+    background-color: #ffffff;
 }
 
 .chat-damage-buttons button {
