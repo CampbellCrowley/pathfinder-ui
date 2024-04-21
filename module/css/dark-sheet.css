@@ -306,7 +306,7 @@
     background: unset;
 }
 .sheet.actor.character.dark-theme button {
-    color: var(--pfui-main-color) !important;
+    color: var(--background) !important;
     background: var(--glass-bg);
     border-color: var(--pfui-main-color) !important;
     border-radius: var(--border-radius);

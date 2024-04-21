@@ -10,7 +10,7 @@
       "flags": {}
     }
   ],
-  "version": "11.315.5135.3",
+  "version": "11.315.5135.4",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -52,7 +52,7 @@
   "media": [
     {
         "type": "setup",
-        "caption": "PF2e Pathfinder Ui v3",
+        "caption": "PF2e Pathfinder Ui v3 (Spike)",
         "thumbnail": "/modules/pathfinder-ui/ui/artwork/pfrpg-thumb.webp"
     }],
   "languages": [
