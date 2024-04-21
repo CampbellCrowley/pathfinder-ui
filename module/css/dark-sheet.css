@@ -265,6 +265,9 @@
     background: radial-gradient(var(--background-2), transparent);
     text-shadow: none;
 }
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.feats ol.feats-list li.slot .item-name .feat-slot-title {
+    color: var(--pfui-main-color)!important;
+}
 
 .sheet.actor.character.dark-theme .crb-style .sheet-body .sheet-content .tab.inventory .wealth {
     color: var(--pfui-main-color);
@@ -306,7 +309,6 @@
     background: unset;
 }
 .sheet.actor.character.dark-theme button {
-    color: var(--background) !important;
     background: var(--glass-bg);
     border-color: var(--pfui-main-color) !important;
     border-radius: var(--border-radius);
@@ -426,16 +428,16 @@ background: radial-gradient(var(--background-2), transparent);
     border-radius: var(--border-radius);
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .label {
-    color: var(--pfui-main-color);
+    color: var(--pfui-main-color) !important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value {
-    color: var(--color-cool-1);
+    color: var(--color-cool-1) !important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value i {
-    color: var(--alternate-background);
+    color: var(--alternate-background) !important;
 }
 .actor.sheet.character.dark-theme .crb-style .sheet-body .sheet-content .tab.character .subsection.speeds .speed .value.rollable svg path {
-    fill: var(--color-cool-1);
+    fill: var(--color-cool-1) !important;
 }
 .actor.sheet.character.dark-theme form.crb-style header.char-header .char-level .level input {
     color: var(--green)!important;
@@ -516,7 +518,7 @@ background: radial-gradient(var(--background-2), transparent);
     color:black;
 }
 :root .actor.sheet.dark-theme .damage.color.slashing .icon {
-    color:var(--pfui-main-color);
+    color:var(--color-cool-4)!important;
 }
 :root .actor.sheet.dark-theme .damage.color.piercing .icon {
     color:var(--pfui-main-color);
@@ -1446,7 +1448,7 @@ color: var(--primary-remaster);
 }
 .remaster.actor.sheet.character.dark-theme form.crb-style section.major > header button,
 .remaster.actor.sheet.character.dark-theme form.crb-style section.major > .subsection > header button {
-    background: transparent;
+    /* background: transparent; */
     color: var(--primary-remaster)!important;
 }
 .remaster.actor.sheet.character.dark-theme .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
