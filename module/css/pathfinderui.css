@@ -5,7 +5,15 @@
 @import 'compatibility.css';
 @import 'privacy-button.css';
 @import 'alliance-viewer.css';
-
+@import 'dark-sheet.css';
+@import 'dark-party-sheet.css';
+@import 'dark-loot-sheet.css';
+@import 'dark-npc-sheet.css';
+@import 'dark-hazard-sheet.css';
+@import 'dark-kingdom-sheet.css';
+@import 'simply-portraits.css';
+@import 'dark-custom.css';
+@import 'pause-icon-config.css';
 
 /* POLICES
 ====================================================== */
@@ -50,16 +58,6 @@ body {
     background-size: cover;
 }
 
-#pause img[src*="icons/svg/clockwork.svg"]{
-	box-sizing: border-box;
-	width: 128px;
-	height: 128px;
-	padding-left: 128px;
-
-	background-image: url("../ui/other/paused-pfrpg.webp");
-	animation: rotation 20s infinite linear;
-}
-
 :root {
     --pfui-main-color: #cfbda7;
     --pfui-main-grey-color: #98968a;
@@ -97,26 +95,42 @@ body {
 
 /* Foundry2
 ====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
     --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
     --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
     --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
     --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
     --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
     --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
     --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
     --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
     --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
     --color-cool-5: #0b0a13;
     --color-cool-5-25: rgba(11, 10, 19, 0.25);
     --color-cool-5-50: rgba(11, 10, 19, 0.5);
     --color-cool-5-75: rgba(11, 10, 19, 0.75);
     --color-cool-5-90: rgba(11, 10, 19, 0.9);
-    --color-light-1: #f7f3e8;
-    --color-light-2: #efe6d8;
-    --color-light-3: #e7d1b1;
-    --color-light-4: #d0b8a3;
-    --color-light-5: #9f8475;
-    --color-light-6: #816b66;
+
     --color-level-error: #ce0707;
     --color-level-error-bg: rgba(105, 0, 8, 0.8);
     --color-level-error-border: #750003;
@@ -175,12 +189,17 @@ body.compact-mode #logo {
     left: -10%;
 }
 
-#context-menu {
+#context-menu ol.context-items, 
+#context-menu li.context-group > ol {
     color: var(--pfui-main-color);
     background: var(--color-cool-5);
-    border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy-shadow);
+    border: unset;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+#context-menu li.context-item:hover {
+    color: var(--color-warm-1);
 }
 
 
@@ -475,6 +494,21 @@ body.compact-mode #logo {
     content: "";
 }
 
+#sidebar #sidebar-tabs i.fa-folder {
+    content: "";
+    background-image: url("../ui/sidebar/sidebar-button-folder.webp") !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:100% !important;
+    background-repeat: no-repeat;
+}
+
+#sidebar #sidebar-tabs i.fa-folder::before {
+    content: "";
+}
+
 /*************************************************************/
 /*======================= CHAT TAB ==========================*/
 /*************************************************************/
@@ -578,6 +612,7 @@ body.compact-mode #logo {
 }
 
 .dice-roll .dice-formula {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     background: var(--color-cool-5-50);
     border: 1px solid var(--color-cool-5);
     box-shadow: var(--glassy);
@@ -763,16 +798,18 @@ hr {
 /*************************************************************/
 .settings-sidebar #game-details {
     color: var(--pfui-main-grey-color);
+    background: var(--color-cool-5-50);
+    text-shadow: var(--text-shadow);
 }
-
-#settings button,
+#settings button, 
 #sidebar .directory .action-buttons button {
     z-index: 18;
     color: var(--pfui-main-grey-color);
     font-family: 'Kurale', serif;
     line-height: 25px;
     position: relative;
-    background: url(../ui/buttons/button-bg.webp) no-repeat;
+    /*background: url(../ui/buttons/button-bg.webp) no-repeat;*/
+    background: var(--color-cool-5-50);
     background-size: cover;
     border: 1px solid #332a1f;
     box-shadow: 0px 0px 0px 1px #675241;
@@ -786,6 +823,7 @@ hr {
 
 #settings button:hover, 
 #sidebar .directory .action-buttons button:hover {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     color: var(--color-warm-1);
     text-shadow: 0 0 15px var(--red-light);
     background: url(../ui/frames/header.webp) center center;
@@ -873,15 +911,15 @@ hr {
 /*************************************************************/
 #fps {
     position: absolute;
-    right: -25px;
+    right: 0px;
     bottom: 7px;
     width: 60px;
-    color: var(--pfui-main-color);
-    text-shadow: var(--text-shadow);
+    color: var(--color-warm-1);
     background: var(--color-cool-5);
-    border: 1px solid var(--color-cool-5);
-    border-radius: unset;
-    box-shadow: var(--glassy-shadow);
+    border: unset;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
 }
 #fps label {
     display: none;
@@ -933,9 +971,10 @@ hr {
 }
 #hotbar .macro .macro-key {
     top: initial;
-    bottom: 2px;
+    bottom: -6px;
+    right: -8px;
     z-index: 3;
-    color: var(--color-warm-1);
+    color: var(--red-light);
     background: none;
     text-shadow: var(--text-shadow);
 }
@@ -1006,6 +1045,10 @@ hr {
     z-index: -2;
     opacity: 0.88;
 }
+.application .controls-dropdown.expanded {
+    box-shadow: unset;
+    background: unset;
+}
 
 /* DIALOG */
 .dialog-content textarea {
@@ -1027,7 +1070,7 @@ hr {
 .app.window-app.chat-popout .window-content .chat-message {
     background: rgba(6, 4, 3, 0.92);
 }
-
+.app.window-app,
 .app.window-app.dialog,
 .app.window-app.folder-edit {
     background: rgba(6, 4, 3, 0.92);
@@ -1053,7 +1096,7 @@ hr {
     border: none;
     color: var(--pfui-main-color);
 }
-
+.window-app .window-header::after,
 .window-app.dialog .window-header::after,
 .window-app.folder-edit .window-header::after {
     position: absolute;
@@ -1066,67 +1109,53 @@ hr {
     background: url(../ui/frames/header.webp);
     background-size: 100% 45px;
 }
-
-.dialog button,
-.folder-edit button {
-    font-family: 'Kurale', serif;
+.dialog button, 
+.folder-edit button,
+.application button,
+.application a.button, 
+.roll-modifiers-dialog .roll,
+.dialog .dialog-buttons button,
+.dialog .dialog-buttons button.default,
+.dialog .dialog-buttons button:last-child,
+.application .window-header button.header-control {
     font-weight: 600;
-    color: var(--rpg-styled-ui-color);
-    background: transparent;
-    border: none!important;
-    position: relative;
-    box-shadow: none;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.dialog button:hover, 
+.folder-edit button:hover,
+.application button:hover,
+.application a.button:hover,
+.dialog-buttons button:hover,
+.roll-modifiers-dialog .roll:hover,
+.dialog .dialog-buttons button.default:hover,
+.dialog .dialog-buttons button:last-child:hover,
+.application .window-header button.header-control:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--color-cool-5) !important;
+    border-radius: var(--border-radius);
 }
 
 .folder-edit form .form-group label,
 .folder-edit form .form-group label {
-    color: var(--pfui-main-color)
+    color: var(--pfui-main-color);
 }
-
-.dialog button::before,
-.folder-edit button::before {
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 110%;
-    top: 0%;
-    background: url(../ui/buttons/btn-dnd5e-card.webp);
-    background-size: 100% 100%;
-    z-index: -1;
-    left: 0;
-}
-
-.dialog button::after,
-.folder-edit button::after {
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 130%;
-    top: -15%;
-    background: url(../ui/buttons/btn-accept.webp);
-    background-size: 100% 100%;
-    z-index: -1;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-}
-
 .dialog .dialog-buttons {
     border: none;
 }
-
-.dialog button.default::before,
-.folder-edit button.default::before {
-    background: url(../ui/buttons/btn-dnd5e-card_hover.webp);
-    background-size: 100% 100%;
-}
-
 .dialog button:hover::after,
 .folder-edit button:hover::after {
     opacity: 1;
 }
-
 .dialog input,
 .folder-edit input {
     border: none;
@@ -1154,7 +1183,7 @@ hr {
 .dialog input:focus,
 .folder-edit input:focus {
     box-shadow: none;
-    outline: 2px solid #782e22;
+    outline: 1px solid #584a75;
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
@@ -1163,13 +1192,10 @@ input[type="radio"]:checked {
 input[type="checkbox"]:checked:hover {
     accent-color: var(--color-warm-2);
 }
-.roll-modifiers-dialog .roll {
-    color: var(--text-light);
-    background-color: unset;
-}
 
 .dialog select,
-.folder-edit select {
+.folder-edit select,
+#generate-check-prompt .dialog-content tags.tagify {
     border: 0;
     background: var(--rpg-styled-ui-color);
 }
@@ -1274,12 +1300,50 @@ button#roll-hd:hover::before {
     left: -10%;
     opacity: 0.88;
 }
+#navigation #scene-list .scene.active {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_active.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.active.view {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.view.gm {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.view {
+    color: var(--color-warm-1);
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    text-shadow: var(--text-shadow);
+}
 #navigation #scene-list .scene.gm {
     background: url(../ui/buttons/controls_btn_accent.webp);
     background-size: 100% 100%;
     border: none;
+    text-shadow: var(--text-shadow);
 }
-#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+#navigation #scene-list .scene.nav-item:hover,
+#navigation #scene-list .scene.active:hover,
+#navigation #scene-list .scene.active.view:hover,
+#navigation #scene-list .scene.view.gm:hover,
+#navigation #scene-list .scene.view:hover {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+#navigation #scene-list .scene.view, 
+#navigation #scene-list .scene.context {
     box-shadow: none;
 }
 

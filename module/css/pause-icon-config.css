@@ -1,0 +1,26 @@
+/* POLICES
+====================================================== */
+@font-face {
+	font-family: "Taroca";
+	src: url("./systems/fonts/Taroca.ttf") format('truetype');
+}
+
+label.pause-icon.pi-label-name {
+    font-weight: bold;
+}
+.pause-icon.pi-settings-save {
+    width: 200px;
+    background-color: rgb(190, 189, 178);
+    border: 2px groove var(--color-border-light-highlight);
+}
+.pause-icon.pi-submenu-header{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+#pause > figcaption {
+    font-family:'Taroca';
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+}

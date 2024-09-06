@@ -26,13 +26,13 @@
     "RPGUI.SETTINGS.TOKEN_EFFECT_HUD_HINT": "Makes effects circular and arranges them outside the token, or on the token ring for larger tokens",
    
     "RPGUI.SETTINGS.TOKEN_HUD": "Disable Dark PF2e Interactive Token Tooltip?",
-    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip by default theme",
+    "RPGUI.SETTINGS.TOKEN_HUD_HINT": "Disables the dark theme of PF2e Interactive Token Tooltip and restores default theme",
 
-    "RPGUI.SETTINGS.SIMPLY_PORTRAITS": "Portrait Size (px)",
-    "RPGUI.SETTINGS.SIMPLY_PORTRAITS_HINT": "The width and height of chat portraits in the chat log, given in pixels. (Set 0 to hide portraits)",
+    "RPGUI.SETTINGS.PF2E_HUD": "Disable PF2e HUD Theme?",
+    "RPGUI.SETTINGS.PF2E_HUD_HINT": "Disable PF2e HUD theme and restores default theme",
 
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT": "Constrast enhancement",
-    "RPGUI.SETTINGS.HIGHLIGHT_GM_OWNER_TEXT_HINT": "This is a local setting that will highlight text.",
+    "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING": "Disable PF2e Bestiary Tracking Theme?",
+    "RPGUI.SETTINGS.PF2E_BESTIARY_TRACKING_HINT": "Disable PF2e Bestiary Tracking theme and restores default theme",
 
     "RPGUI.SETTINGS.NAVIGATION": "Schalte die Navigation zurück in den horizontalen Modus",
     "RPGUI.SETTINGS.NAVIGATION_HINT": "Verwende diesen Schalter, wenn du die Combat Carousel-Integration nicht verwendest",

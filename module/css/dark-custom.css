@@ -8,24 +8,50 @@
 	--border-radius: 3px;
     --glassy-shadow: var(--glassy) , var(--box-shadow);
 
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
+
 /* Foundry2
 ====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
     --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
     --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
     --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
+    --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
+    --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
+    --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
+    --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
     --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
     --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
     --color-cool-5: #0b0a13;
     --color-cool-5-25: rgba(11, 10, 19, 0.25);
     --color-cool-5-50: rgba(11, 10, 19, 0.5);
     --color-cool-5-75: rgba(11, 10, 19, 0.75);
     --color-cool-5-90: rgba(11, 10, 19, 0.9);
-    --color-light-1: #f7f3e8;
-    --color-light-2: #efe6d8;
-    --color-light-3: #e7d1b1;
-    --color-light-4: #d0b8a3;
-    --color-light-5: #9f8475;
-    --color-light-6: #816b66;
+
     --color-level-error: #ce0707;
     --color-level-error-bg: rgba(105, 0, 8, 0.8);
     --color-level-error-border: #750003;
@@ -40,6 +66,7 @@
     --color-level-warning-border: #b18404;
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
+
 }
 
 
@@ -93,6 +120,9 @@
 }
 .dark-custom.sheet.journal-entry .pages-list .directory-item.active:first-of-type {
     border-top: none;
+}
+.dark-custom.sheet.journal-entry .directory .directory-item:is(.context, .active)::after {
+border: 1px solid transparent;
 }
 .dark-custom.sheet.journal-entry .pages-list .directory-item.active:last-of-type {
     border-bottom: 2px solid var(--custom-green-light);
@@ -265,7 +295,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-custom .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], .dark-custom .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
+.dark-custom .journal-entry-page .journal-page-content a.inline-check[data-pf2-traits*=secret], 
+.dark-custom .journal-page-content span[data-pf2-check][data-pf2-traits*=secret] {
 	font-family: "Good OT";
 	color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -274,7 +305,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }	
-.dark-custom .journal-entry-page .journal-page-content a.inline-check, .dark-custom .journal-page-content span[data-pf2-check] {
+.dark-custom .journal-entry-page .journal-page-content a.inline-check, 
+.dark-custom .journal-page-content span[data-pf2-check] {
 	font-family: "Good OT";
 	color: var(--pfui-main-color);
     background: var(--custom-trait);
@@ -283,7 +315,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-custom .journal-entry-page .journal-page-content a.inline-check, .dark-custom .journal-page-content span[data-pf2-action] {
+.dark-custom .journal-entry-page .journal-page-content a.inline-check, 
+.dark-custom .journal-page-content span[data-pf2-action] {
 	font-family: "Good OT";
 	color: var(--pfui-main-color)!important;
     background: var(--custom-trait);
@@ -292,7 +325,8 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-.dark-custom .journal-entry-page .journal-page-content a.content-link, .dark-custom .journal-entry-page .journal-page-content a.inline-roll {
+.dark-custom .journal-entry-page .journal-page-content a.content-link, 
+.dark-custom .journal-entry-page .journal-page-content a.inline-roll {
 	font-family: 'Good OT';
     font-size: 14px;
     color: var(--pfui-main-color)!important;
@@ -319,16 +353,13 @@ h6+p+blockquote, h6+p+ul+blockquote) {
     color: var(--color-text-dark-primary);
 }
 .light.dark-custom.sheet.journal-entry .pages-list .page-heading .page-title {
-    text-indent: 0rem;
     font-family: "Good OT Cond Bold";
     font-size: 1.1rem;
 }
 .light.dark-custom.sheet.journal-entry .pages-list .h2 .heading-link {
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .light.dark-custom.sheet.journal-entry .pages-list .h3 .heading-link {
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .light.dark-custom.sheet.journal-entry .journal-sidebar .directory-header .header-search input {
@@ -564,7 +595,6 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom.sheet.journal-entry .pages-list .page-heading .page-title {
     color: var(--pfui-main-grey-color);
-    text-indent: 0rem;
     font-family: "Good OT Cond Bold";
     font-size: 1.1rem;
 }
@@ -588,7 +618,6 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom.sheet.journal-entry .pages-list .h2 .heading-link {
 	color: gray;
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .dark-custom.sheet.journal-entry .pages-list .h2 .heading-link:hover {
@@ -596,7 +625,6 @@ h6+ul+blockquote, h6+blockquote) {
 }
 .dark-custom.sheet.journal-entry .pages-list .h3 .heading-link {
 	color: grey;
-    text-indent: 0.5rem;
     font-family: "Good OT";
 }
 .dark-custom.sheet.journal-entry .pages-list .h3 .heading-link:hover {

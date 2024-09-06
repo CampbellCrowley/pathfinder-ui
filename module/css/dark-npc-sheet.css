@@ -38,34 +38,50 @@
     --sub: var(--background);
     --text-shadow: 0px 1px 2px black;
 
-    /*--rarity-common: #7e7e7e;*/
-    --rarity-common: var(--color-cool-1);
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
     
 /* Foundry2
 ====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
     --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
     --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
     --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
     --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
     --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
     --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
     --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
     --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
     --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
     --color-cool-5: #0b0a13;
     --color-cool-5-25: rgba(11, 10, 19, 0.25);
     --color-cool-5-50: rgba(11, 10, 19, 0.5);
     --color-cool-5-75: rgba(11, 10, 19, 0.75);
     --color-cool-5-90: rgba(11, 10, 19, 0.9);
-    --color-light-1: #f7f3e8;
-    --color-light-2: #efe6d8;
-    --color-light-3: #e7d1b1;
-    --color-light-4: #d0b8a3;
-    --color-light-5: #9f8475;
-    --color-light-6: #816b66;
+
     --color-level-error: #ce0707;
     --color-level-error-bg: rgba(105, 0, 8, 0.8);
     --color-level-error-border: #750003;
@@ -108,6 +124,9 @@
 .dark-npc-theme.actor.npc form .item:hover {
     color: var(--text-dark);
     text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.npc form .sheet-body .actions-list li.action {
+    border-bottom: 1px dotted var(--color-cool-4) !important;
 }
 .dark-npc-theme.actor.npc form .empty {
     color: var(--color-warm-2);
@@ -346,17 +365,17 @@
 .dark-npc-theme.actor.npc form .actions-options .actions-option input[type="checkbox"]:checked, input[type="radio"]:checked {
     accent-color: var(--green);
 }
-.dark-npc-theme.actor.npc form a.roll {
+.dark-npc-theme.actor.npc form a.roll:not(.inline-roll) {
     color: var(--color-warm-1);
 }
-.dark-npc-theme.actor.npc form a.roll:hover {
+.dark-npc-theme.actor.npc form a.roll:not(.inline-roll):hover {
     color: var(--green);
   }
 
 
 /*      Inventory       
 *************************/
-.dark-npc-theme.actor.npc .currency {
+.dark-npc-theme.actor.npc section.window-content .currency {
     color: var(--pfui-main-color);
     border: none;
     background: none;
@@ -365,13 +384,13 @@
 text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .currency .label {
+.dark-npc-theme.actor.npc section.window-content .currency .label {
     color: var(--green);
 }
-.dark-npc-theme.actor.npc .currency .denomination {
+.dark-npc-theme.actor.npc section.window-content .currency .denomination {
     color: var(--pfui-main-color);
 }
-.dark-npc-theme.actor.npc .currency li > button {
+.dark-npc-theme.actor.npc section.window-content .currency li > button {
     color: var(--pfui-main-color);
     border: none;
     background: none;
@@ -380,15 +399,17 @@ text-shadow: var(--text-shadow);
 text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .wealth {
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active .coinage .wealth, 
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active header {
+    background: var(--primary-background);
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-75));
     border: none;
-    background: none;
     background-color: var(--glass-bg);
     box-shadow: var(--box-shadow);
-text-shadow: var(--text-shadow);
+    text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .wealth h3.item-name {
+.dark-npc-theme.actor.npc section.window-content .wealth h3.item-name {
     color: var(--pfui-main-color);
 }
 .dark-npc-theme.actor.npc form ol.spell-list > li .item-name h4 > a:hover {
@@ -398,7 +419,7 @@ text-shadow: var(--text-shadow);
     padding-right: 0.3rem;
 }
 
-.dark-npc-theme.actor.npc .currency li > button:hover:not(:disabled) {
+.dark-npc-theme.actor.npc section.window-content .currency li > button:hover:not(:disabled) {
     border: 1px solid black;
     background: none;
     background-color: var(--green);
@@ -408,9 +429,10 @@ text-shadow: var(--text-shadow);
     color: var(--background)!important;
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc .sheet-body .tab.inventory.active .inventory-section .coinage .wealth, 
-.dark-npc-theme.actor.npc .sheet-body .tab.inventory.active .inventory-section header {
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active .inventory-section .coinage .wealth, 
+.dark-npc-theme.actor.npc form .sheet-body .tab.inventory.active .inventory-section header {
     background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90))!important;
+    box-shadow: unset;
 }
 .dark-npc-theme.actor.npc .window-content .inventory .inventory-list > header, 
 .dark-npc-theme.actor.npc .window-content .inventory .total-bulk {
@@ -423,23 +445,23 @@ text-shadow: var(--text-shadow);
     border: 1px solid var(--color-cool-4);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-common {
-    border-color: var(--rarity-common);
-    color: var(--rarity-common);
+    border-color: var(--color-rarity-common);
+    color: var(--color-rarity-common);
     text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-uncommon {
-    border-color: var(--rarity-uncommon);
-    color: var(--rarity-uncommon);
+    border-color: var(--color-rarity-uncommon);
+    color: var(--color-rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-rare {
-    border-color: var(--rarity-rare);
-    color: var(--rarity-rare);
+    border-color: var(--color-rarity-rare);
+    color: var(--color-rarity-rare);
     text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-name h4:not(:hover).rarity-unique {
-    border-color: var(--rarity-unique);
-    color: var(--rarity-unique);
+    border-color: var(--color-rarity-unique);
+    color: var(--color-rarity-unique);
     text-shadow: var(--text-shadow);
 }
 
@@ -491,10 +513,10 @@ text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active,
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type.active {
-    color: var(--rarity-rare);
+    color: var(--color-rarity-rare);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a .fa-stack {
-    color: var(--rarity-rare);
+    color: var(--color-rarity-rare);
 }
 .dark-npc-theme.actor.npc .window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
     color: var(--red);
@@ -508,7 +530,7 @@ text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc .window-content .item-summary .button-group button {
     color: var(--pfui-main-color);
-    background: radial-gradient(var(--red),transparent);
+    background: radial-gradient(var(--red), var(--color-cool-5));
     border-radius: 15px;
     border: 2px groove var(--color-border-light-highlight);
 }
@@ -554,7 +576,7 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li.header-row {
     color: var(--pfui-main-color)!important;
     border: none!important;
-    background: radial-gradient(var(--primary-remaster), transparent)!important;
+    background: radial-gradient(var(--primary-remaster), var(--color-cool-5))!important;
     background-color: var(--glass-bg)!important;
 text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
@@ -606,7 +628,7 @@ text-shadow: var(--text-shadow);
     background-color: transparent!important;
 }
 .dark-npc-theme.actor.npc .item-summary .item-buttons button {
-    background: radial-gradient(var(--primary-remaster), transparent);
+    background: radial-gradient(var(--primary-remaster), var(--color-cool-5));
     border: none;
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
@@ -639,16 +661,16 @@ text-shadow: var(--text-shadow);
     text-shadow: var(--text-shadow)!important;
     color: var(--background)!important;
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button {
+.dark-npc-theme.actor.npc form ol.spell-list > li button.cast-spell {
     color: var(--pfui-main-color);
     text-transform: uppercase;
-    --secondary: var(--color-cool-3);
+    --color-pf-secondary: var(--color-cool-3);
     border: 1px solid black;
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow);
     border-radius: var(--border-radius);
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li .cast-spell button:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li button.cast-spell:hover {
     border: 1px solid black;
     background: none;
     background-color: var(--green);
@@ -661,13 +683,13 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form ol.spell-list > li[data-expended-state=true] h4 {
     color: #ff6400;
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-slot-expended] button.cast-spell {
+.dark-npc-theme.actor.npc form ol.spell-list > li.spell[data-slot-expended] button.cast-spell {
     background: var(--color-cool-5);
     color: var(--red-light);
     text-shadow: 0 0 8px var(--color-shadow-primary);
     box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.5);
 }
-.dark-npc-theme.actor.npc form ol.spell-list > li[data-slot-expended] button.cast-spell:hover {
+.dark-npc-theme.actor.npc form ol.spell-list > li.spell[data-slot-expended] button.cast-spell:hover {
     background: var(--red-light);
     color:  var(--color-cool-5);
     box-shadow: inset 0 0 0 1px  var(--color-cool-5);
@@ -697,7 +719,7 @@ text-shadow: var(--text-shadow);
 }
 .dark-npc-theme.actor.npc form input[type=text], 
 .dark-npc-theme.actor.npc form input[type=number] {
-    color: var(--rarity-common);
+    color: var(--color-rarity-common);
 }
 .dark-npc-theme.actor.npc form .notes .notes-section > h4 {
     color: var(--color-warm-1)!important;
@@ -714,7 +736,62 @@ text-shadow: var(--text-shadow);
 .dark-npc-theme.actor.npc form .notes .notes-section.publication .notes-text input[type="checkbox"]:checked, input[type="radio"]:checked {
     accent-color: var(--green);
 }
+.dark-npc-theme.actor.sheet section.window-content .item-summary .gm-notes {
+    border: unset;
+    flex: 0 0 auto;
+    background: radial-gradient(var(--color-cool-3-90), var(--color-cool-4-90));
+    box-shadow: var(--box-shadow);
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
+    padding: 3px 10px;
+    font-weight: 500;
+}
 
+
+/*TABLES*/
+.dark-npc-theme.actor.sheet table,
+.dark-npc-theme.actor.sheet table.pf2e,
+.dark-npc-theme.actor.sheet table.pf2-table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--box-shadow);
+}
+.dark-npc-theme.actor.sheet table th,
+.dark-npc-theme.actor.sheet table.pf2e th,
+.dark-npc-theme.actor.sheet table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+.dark-npc-theme.actor.sheet table tr:nth-child(2n), 
+.dark-npc-theme.actor.sheet table.pf2e tr:nth-child(even), 
+.dark-npc-theme.actor.sheet table.pf2-table tr:nth-child(even) {
+    background-color: var(--color-cool-5);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.sheet table tr:nth-child(2n+1),
+.dark-npc-theme.actor.sheet table.pf2e tr:nth-child(odd), 
+.dark-npc-theme.actor.sheet table.pf2-table tr:nth-child(odd) {
+	background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.dark-npc-theme.actor.sheet table td,
+.dark-npc-theme.actor.sheet table th,
+.dark-npc-theme.actor.sheet table.pf2e table td,
+.dark-npc-theme.actor.sheet table.pf2e table th,
+.dark-npc-theme.actor.sheet table.pf2-table table td,
+.dark-npc-theme.actor.sheet table.pf2-table table th {
+	padding: 4px 6px;
+}
 
 
 /*        Glassy       

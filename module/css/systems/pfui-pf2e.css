@@ -35,34 +35,52 @@
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     
 
-    --rarity-common: #7e7e7e;
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
+    --color-rarity-secret:var(--color-warm-4);
 
 
 /* Foundry2
 ====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
     --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
     --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
     --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
     --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
     --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
     --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
     --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
     --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
     --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
     --color-cool-5: #0b0a13;
     --color-cool-5-25: rgba(11, 10, 19, 0.25);
     --color-cool-5-50: rgba(11, 10, 19, 0.5);
     --color-cool-5-75: rgba(11, 10, 19, 0.75);
     --color-cool-5-90: rgba(11, 10, 19, 0.9);
-    --color-light-1: #f7f3e8;
-    --color-light-2: #efe6d8;
-    --color-light-3: #e7d1b1;
-    --color-light-4: #d0b8a3;
-    --color-light-5: #9f8475;
-    --color-light-6: #816b66;
+
     --color-level-error: #ce0707;
     --color-level-error-bg: rgba(105, 0, 8, 0.8);
     --color-level-error-border: #750003;
@@ -78,12 +96,39 @@
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
 }
+.application,
+.theme-light .application {
+    --background: var(--color-cool-5-90);
+    --color-text-primary: var(--color-light-2);
+    --color-header-background: rgba(0, 0, 0, 0.5);
+    --color-border: var(--color-cool-4);
+    --color-fieldset-border: var(--color-light-6);
+    --color-form-hint: var(--color-light-5);
+    --color-form-hint-hover: var(--color-light-4);
+    --color-form-label: var(--color-light-4);
+    --color-form-label-hover: var(--color-light-2);
+    --color-select-option-bg: transparent;
+}
+input,
+select,
+.theme-light input, 
+.theme-light select {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    --input-placeholder-color: var(--color-light-4);
+    --input-focus-outline-color: var(--color-cool-3);
+}
 
 /* scrollbar
 ====================================================== */
+* {
+    scrollbar-color: initial;
+    scrollbar-width: auto!important;
+}
 ::-webkit-scrollbar-thumb {
-    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
-    border: 1px dotted var(--color-cool-3);
+    background: radial-gradient(var(--color-cool-4), var(--color-cool-5))!important;
+    border: 1px dotted var(--color-cool-3)!important;
 }
 
 
@@ -129,7 +174,8 @@
     background-color: var(--color-cool-5-90);
     color: var(--pfui-main-color);
     border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
+    border-top: 1px solid var(--color-warm-1);
+    border-bottom: 1px solid var(--color-warm-1);
     backdrop-filter: blur(3px);
     box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
 }
@@ -141,27 +187,6 @@
     border: 1px solid var(--glassy);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-}
-
-#sidebar .directory .directory-item.folder .context {
-    background-color: var(--color-warm-3)!important;
-    border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
-    box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
-}
-#sidebar .directory .directory-item.context,
-#sidebar .directory .directory-item.active {
-    background-color: var(--color-warm-3);
-    border-radius: var(--border-radius-5);
-    border: 1px solid var(--color-warm-1);
-    box-shadow: 0px 0px 6px var(--color-warm-2), 0px 2px 8px 1px var(--color-warm-3);
-}
-#sidebar .directory .directory-item .document-name:hover {
-    color: var(--green);
-}
-
-.system-pf2e .directory .directory-list {
-    padding: 0 0 0 5px;
 }
 
 .system-pf2e section.chat-sidebar .jump-to-bottom > a {
@@ -193,13 +218,11 @@
     border-image-outset: 1px 2px 2px 2px;
     border-radius: 0;
 }
-
 .system-pf2e .sheet.actor .window-header,
 .system-pf2e .sheet.item .window-header {
     border: none;
     color: var(--pfui-main-color);
 }
-
 .system-pf2e .sheet.actor:not(.loot-sheet-npc) .window-header::after,
 .system-pf2e .sheet.item .window-header::after {
     position: absolute;
@@ -218,6 +241,9 @@
 .pf2e.chat-card .card-footer span {
     border-top: 2px dotted var(--border-color);
     border-bottom: 2px dotted var(--border-color);
+}
+.pf2e.chat-card footer span {
+    border-right: var(--space-2) dotted var(--border-color);
 }
 
 .pf2e.chat-card.kingdom .confirmation {
@@ -334,7 +360,14 @@
 #effects-panel hr {
     border-top: 1px dotted var(--color-cool-3);
 }
-
+.actor.sheet section.window-content .inventory ul.items > li > .data.drop-highlight {
+    background: var(--color-warm-3);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border-top: 1px solid var(--color-warm-2);
+    border-bottom: 1px solid var(--color-warm-2);
+    border-radius: var(--border-radius);
+  }
 
 
 /*Commentaire status condition*/
@@ -498,7 +531,12 @@ a.content-link.broken {
 }
 
 [data-visibility]:not([data-visibility=all])[data-visibility=owner] {
-    background: radial-gradient(var(--color-cool-4), var(--color-cool-5));
+    font-family: "Good OT";
+    color: var(--pfui-main-color);
+    background: var(--color-cool-4);
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 
 #chat-log img {
@@ -506,6 +544,19 @@ a.content-link.broken {
     border-radius: 50%;
     box-shadow: var(--box-shadow);
 }
+/*TEMP FIX PORTRAIT BUIT-IN*/
+.pf2e.chat-card .card-header img {
+    transform: scale(1)!important;
+    margin-right: var(--space-6);
+    outline: 2px solid var(--color-light-6);
+}
+.chat-message .message-header.with-image h4.message-sender {
+    color: var(--color-light-2);
+}
+.chat-message .message-header.with-image .user {
+    color: var(--color-light-4);
+}
+/*end*/
 
 #chat-log button {
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
@@ -665,16 +716,6 @@ a.content-link.broken {
     background: blue;
 }
 
-.dice-total:hover,
-.dice-roll .dice-formula:hover,
-#chat-log button:hover,
-#chat-log button:focus {
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-    color: var(--pfui-main-color);
-    background-color:hsl(0,0%,15%);
-    box-shadow: var(--box-shadow);
-} 
-
 #chat-log .chat-message > .message-content .message-buttons button .cue i {
     --fa-primary-color: var(--color-warm-1);
     --fa-secondary-color: var(--red-light);
@@ -695,10 +736,13 @@ a.content-link.broken {
     border-radius: 50%;
     margin-right: 6px;
 }
+#chat-log button:focus {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: var(--pfui-main-color);
+    background-color:hsl(0,0%,15%);
+    box-shadow: var(--box-shadow);
+} 
 
-
-.dice-total:hover,
-.dice-roll .dice-formula:hover,
 #chat-log button:hover {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     color: var(--color-cool-5);
@@ -812,42 +856,91 @@ button.half-damage .fa-heart-broken::after {
 
 
 /*Shield*/
-
-#chat-log .message-content .damage-application button[data-action=shield-block]:hover {
-    color: var(--pfui-main-color);
-    background-color: var(--color-cool-3);
-    border: 1px solid var(--color-cool-1);
-    box-shadow: var(--box-shadow-light);
+.damage-application button[data-action=shield-block]:hover {
+    color: var(--pfui-main-color)!important;
+    background-color: var(--color-cool-3)!important;
+    border: 1px solid var(--color-cool-1)!important;
+    box-shadow: var(--box-shadow-light)!important;
 }
-
-#chat-log .message-content .dice-total-shield-btn.shield-activated {
-    color: var(--pfui-main-color);
-    background-color: var(--color-cool-2);
-    border: 1px solid var(--color-cool-1);
+.dice-total-shield-btn.shield-activated {
+    color: var(--pfui-main-color)!important;
+    background-color: var(--color-cool-2)!important;
+    border: 1px solid var(--color-cool-1)!important;
 }
-
-#chat-log .message-content .dice-total-shield-btn.shield-activated:hover {
-    color: var(--pfui-main-color);
-    background-color: var(--color-cool-3);
-    border: 1px solid var(--color-cool-1);
-    box-shadow: var(--box-shadow-light);
+.dice-total-shield-btn.shield-activated:hover {
+    color: var(--pfui-main-color)!important;
+    background-color: var(--color-cool-3)!important;
+    border: 1px solid var(--color-cool-1)!important;
+    box-shadow: var(--box-shadow-light)!important;
 }
 
 /*Heal*/
-#chat-log .message-content .damage-application button[data-action=apply-healing] .fa-stack i.fa-plus {
-    color: var(--green);
+.chat-message .message-content .damage-application button[data-action=apply-healing] .fa-stack i.fa-plus {
+    color: var(--color-cool-5);
     text-shadow: none;
 }
-#chat-log .message-content .damage-application button[data-action=apply-healing]:hover {
-    color: var(--color-cool-5);
-    background-color: var(--green);
-    border: 1px solid lightgreen;
-    box-shadow: var(--box-shadow-light);
+.chat-message .message-content .damage-application button[data-action=apply-healing]:hover {
+    background-color: var(--green)!important;
+    border: 1px solid lightgreen!important;
+    box-shadow: var(--box-shadow-light)!important;
 }
 
 
 
 /*Damage tag base & modifier*/
+:root .damage{
+    --color-bg-acid: rgba(32, 194, 32, 0.125);
+    --color-bg-bleed: rgba(207, 28, 58, 0.125);
+    --color-bg-chaotic: rgba(221, 26, 221, 0.125);
+    --color-bg-cold: rgba(186, 186, 246, 0.125);
+    --color-bg-electricity: rgba(221, 167, 30, 0.125);
+    --color-bg-evil: rgba(153, 59, 220, 0.125);
+    --color-bg-fire: rgba(229, 93, 39, 0.125);
+    --color-bg-force: rgba(177, 77, 249, 0.125);
+    --color-bg-good: rgba(157, 115, 10, 0.125);
+    --color-bg-lawful: rgba(123, 85, 28, 0.125);
+    --color-bg-mental: rgba(87, 87, 219, 0.125);
+    --color-bg-physical: rgba(132, 132, 132, 0.125);
+    --color-bg-poison: rgba(147, 178, 93, 0.125);
+    --color-bg-sonic: rgba(28, 217, 217, 0.125);
+    --color-bg-spirit: rgba(147, 142, 189, 0.125);
+    --color-bg-vitality: rgba(255, 255, 224, 0.125);
+    --color-bg-void: rgb(81, 21, 78, 0.125);
+    --color-border-acid: #12a812;
+    --color-border-bleed: #d11c3b;
+    --color-border-chaotic: #d311d3;
+    --color-border-cold: #6464dd;
+    --color-border-electricity: yellow;
+    --color-border-evil: rgb(145, 63, 203);
+    --color-border-fire: #cd4a17;
+    --color-border-force: #9222e2;
+    --color-border-good: #dcb85f;
+    --color-border-lawful: #97743f;
+    --color-border-mental: rgb(82, 82, 209);
+    --color-border-physical: #939292;
+    --color-border-poison: #9aba64;
+    --color-border-sonic: rgb(30, 202, 202);
+    --color-border-spirit: #5a5585;
+    --color-border-vitality: #ffffe0;
+    --color-border-void: rgb(122, 38, 117);
+    --color-text-acid: #34aa34;
+    --color-text-bleed: #b0162f;
+    --color-text-chaotic: #b71ab7;
+    --color-text-cold: #6868e1;
+    --color-text-electricity: #e7b22b;
+    --color-text-evil: #836d91;
+    --color-text-fire: #b64214;
+    --color-text-force: #8321ca;
+    --color-text-good: #c79b2b;
+    --color-text-lawful: white;
+    --color-text-mental: #4c4cc8;
+    --color-text-physical: #bab9b9;
+    --color-text-poison: #657d3f;
+    --color-text-sonic: #21c2c2;
+    --color-text-spirit: #827dac;
+    --color-text-vitality: #ffffa0;
+    --color-text-void: rgb(122, 38, 117);
+}
 .damage-tag {
     border:none;
 }
@@ -876,165 +969,71 @@ button.half-damage .fa-heart-broken::after {
 .chat-message .message-content .damage-roll .dice-result .instance.slashing .icon {
     color: var(--pfui-main-color);
 }
-.chat-message .message-content .damage-roll .dice-result .instance.slashing.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.slashing:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.piercing {
     color: var(--pfui-main-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.piercing .icon {
     color: var(--pfui-main-color);
 }
-.chat-message .message-content .damage-roll .dice-result .instance.piercing.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.piercing:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.bludgeoning {
     color: var(--pfui-main-color);
 }
 .chat-message .message-content .damage-roll .dice-result .instance.bludgeoning .icon {
     color: var(--pfui-main-color);
 }
-.chat-message .message-content .damage-roll .dice-result .instance.bludgeoning.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.bludgeoning:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .dice-tooltip .instance .dice .part-formula, 
 .chat-message .message-content .damage-roll .dice-result .dice-tooltip .instance .dice .part-total {
     color: var(--pfui-main-color);
 }
-
 .chat-message .message-content .damage-roll .dice-result .instance.acid {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.acid.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.acid:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.bleed {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.bleed.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.bleed:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.chaotic {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.chaotic.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.chaotic:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.cold {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.cold.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.cold:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.electricity {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.electricity.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.electricity:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.evil {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.evil.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.evil:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.fire {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.fire.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.fire:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.force {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.force.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.force:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.good {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.good.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.good:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.lawful {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.lawful.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.lawful:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.mental {
     color: revert;
 } 
-.chat-message .message-content .damage-roll .dice-result .instance.mental.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.mental:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.poison {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.poison.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.poison:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.sonic {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.sonic.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.sonic:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.spirit {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.spirit.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.spirit:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.vitality {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.vitality.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.vitality:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
-
 .chat-message .message-content .damage-roll .dice-result .instance.void {
     color: revert;
 }
-.chat-message .message-content .damage-roll .dice-result .instance.void.tooltip-part>header, 
-.chat-message .message-content .damage-roll .dice-result .instance.void:not(.tooltip-part) {
-    text-shadow: #fc0 0 0 1px;
-}
+
 
 #chat-log .chat-message .table-draw .table-results .table-result:last-child {
     font-family: "Good OT";
@@ -1058,16 +1057,214 @@ button.half-damage .fa-heart-broken::after {
 }
 
 /*COMBAT TRACKER*/
-#combat .threat-award > *, #combat-popout .threat-award > * {
-    color: var(--pfui-main-color);
+.system-pf2e .combat-sidebar #combat-tracker {
+    padding: 0 5px 0 5px;
+    backdrop-filter: blur(5px);
+}
+#combat .threat-award > *, 
+#combat-popout .threat-award > * {
+    color: var(--pfui-main-grey-color);
 }
 #combat .threat-award .threat .value.extreme,
 #combat-popout .threat-award .threat .value.extreme {
   color: orangered;
 }
+.system-pf2e .combat-sidebar .combat-tracker-header {
+    border-bottom: unset;
+}
+.system-pf2e .combat-sidebar li.combatant .token-name {
+    color: var(--color-cool-1);
+    text-shadow: var(--text-shadow);
+}
+.system-pf2e .directory .directory-item:is(.context, .active)::after {
+    border: unset;
+    border-radius: var(--border-radius-5);
+    border-top: 1px dotted var(--color-border-highlight);
+    border-bottom: 1px dotted var(--color-border-highlight);
+}
+.system-pf2e .combat-sidebar li.combatant .token-initiative {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+.system-pf2e .combat-sidebar #combat-controls {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    border-top: unset;
+}
+.system-pf2e .combat-sidebar a:hover {
+    text-shadow: var(--text-shadow);
+    color: var(--color-warm-1) !important;
+}
 
-/*Mystification Icon*/
+
+/*MYSTIFICATION ICON*/
 .fa-circle-question:before, .fa-question-circle:before {
     color: var(--color-warm-2);
+}
+
+/*Rarity colors*/
+.tags.paizo-style .tag:last-child,
+.tags.paizo-style .tag:first-child {
+    border-right-width: 1px;
+}
+.tags:not(.form-fields) .tag.rarity.common, 
+.tags:not(.form-fields) .tag.rarity[value=common], 
+.tags:not(.form-fields) .tag.rarity > option[value=common], 
+.tags:not(.form-fields) .tag option.rarity.common, 
+.tags:not(.form-fields) .tag option.rarity[value=common], 
+.tags:not(.form-fields) .tag option.rarity > option[value=common] {
+    background-color: var(--color-rarity-common);
+    text-shadow: var(--text-shadow);
+}
+
+.tags:not(.form-fields) .tag.rarity.uncommon, 
+.tags:not(.form-fields) .tag.rarity[value=uncommon], 
+.tags:not(.form-fields) .tag.rarity > option[value=uncommon], 
+.tags:not(.form-fields) .tag option.rarity.uncommon, 
+.tags:not(.form-fields) .tag option.rarity[value=uncommon], 
+.tags:not(.form-fields) .tag option.rarity > option[value=uncommon] {
+    background-color: var(--color-rarity-uncommon);
+    text-shadow: var(--text-shadow);
+}
+.tags:not(.form-fields) .tag.rarity.rare, 
+.tags:not(.form-fields) .tag.rarity[value=rare], 
+.tags:not(.form-fields) .tag.rarity > option[value=rare], 
+.tags:not(.form-fields) .tag option.rarity.rare, 
+.tags:not(.form-fields) .tag option.rarity[value=rare], 
+.tags:not(.form-fields) .tag option.rarity > option[value=rare] {
+    background-color: var(--color-rarity-rare);
+    text-shadow: var(--text-shadow);
+}
+.tags:not(.form-fields) .tag.rarity.unique, 
+.tags:not(.form-fields) .tag.rarity[value=unique], 
+.tags:not(.form-fields) .tag.rarity > option[value=unique], 
+.tags:not(.form-fields) .tag option.rarity.unique, 
+.tags:not(.form-fields) .tag option.rarity[value=unique], 
+.tags:not(.form-fields) .tag option.rarity > option[value=unique] {
+    background-color: var(--color-rarity-unique);
+    text-shadow: var(--text-shadow);
+}
+.tags:not(.form-fields) .tag.rarity.secret, 
+.tags:not(.form-fields) .tag.rarity[value=secret], 
+.tags:not(.form-fields) .tag.rarity > option[value=secret], 
+.tags:not(.form-fields) .tag option.rarity.secret, 
+.tags:not(.form-fields) .tag option.rarity[value=secret], 
+.tags:not(.form-fields) .tag option.rarity > option[value=secret] {
+    background-color: var(--color-rarity-secret);
+    text-shadow: var(--text-shadow);
+}
+
+/*Familiar sheet*/
+.sheet.familiar form {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-cool-5);
+    backdrop-filter: blur(15px);
+}
+.sheet.familiar header .image-container img.actor-image {
+    border-radius: 5px;
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+}
+.sheet.familiar header .header-content .charname input:focus {
+    border-bottom: unset;
+}
+.sheet.familiar header .header-content .charname input {
+--input-background-color: var(--color-cool-4);
+--input-border-color: transparent;
+--input-text-color: var(--color-light-3);
+background: var(--input-background-color);
+border: 1px solid var(--input-border-color);
+outline: 1px solid transparent;
+color: var(--input-text-color);
+--input-box-shadow: none;
+box-shadow: var(--input-box-shadow);
+border-radius: 4px;
+user-select: text;
+transition: outline-color 0.5s;
+}
+.sheet.familiar header .header-content .charname {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border-radius: 3px;
+}
+.sheet.familiar header .header-content .details-section .hp-section .value input {
+    background: var(--color-cool-4);
+    color: var(--color-warm-1);
+    border-radius: 3px;
+}
+.sheet.familiar header .header-content .dying-section .pips .fa-circle,
+.sheet.familiar header .header-content .details-section .hp-section .value .fa-dice-d20 {
+    color:var(--green);
+}
+.sheet.familiar header .header-content .dying-section .pips .fa-circle-x {
+    color:var(--color-warm-2);
+}
+.sheet.familiar header .header-content .details-section .hp-section .label h4,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .save .name,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .ac .name {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-light-4);
+}
+.sheet.familiar header .header-content .dying-section .pips .fa-circle:hover,
+.sheet.familiar header .header-content .dying-section .pips .fa-circle-x:hover,
+.sheet.familiar header .header-content .details-section .hp-section .value .fa-dice-d20:hover,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .save .name:hover,
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .ac .name:hover {
+    color:var(--color-warm-1);
+}
+.sheet.familiar header .header-content .details-section .hp-section .label .fa-solid {
+    color:#1fb222;
+}
+.sheet.familiar header .header-content .details-section .hp-section .label .fa-heart-broken {
+    color:#b01717;
+}
+.sheet.familiar header .header-content .details-section .defenses-section .defenses-list .ac .value i.fa-shield-alt {
+    color:#aab0b3;
+}
+.sheet.familiar select {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+}
+.sheet.familiar .section-container .section-body {
+    background: linear-gradient(45deg, var(--color-cool-4), var(--color-cool-5-90));
+}
+.sheet.familiar .familiar-section .detail label {
+    color:var(--color-cool-1);
+}
+.sheet.familiar .skills-content .skills-list a {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.sheet.familiar .familiar-section .familiar-content input[type=text] {
+    color: var(--pfui-main-color);
+}
+.sheet.familiar .skills-content .skills-list a .mod {
+    color:unset;
+}
+.sheet.familiar .skills-content .skills-list a:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow);
+    color: var(--background)!important;
+}
+.sheet.familiar a:hover {
+    text-shadow: var(--text-shadow);
+    color: var(--color-warm-1);
+}
+.sheet.familiar .actions-list li.action .button-group .frequency input {
+    font-weight: bold;
+    background: var(--color-cool-4);
+    border-radius: var(--border-radius);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+    border: unset;
 }
 /*-------------------------------------------------*/

@@ -6,13 +6,14 @@
     {
       "name": "Sasmira",
       "email": "sasmyra@gmail.com",
-      "url": "https://gitlab.com/sasmira/pathfinder-ui",
+      "url": "https://gitlab.com/sasmira",
+      "discord": "Sasmira",
       "flags": {}
     }
   ],
-  "version": "11.315.5135.4.3",
+  "version": "12.331.631.2.1",
   "compatibility": {
-    "minimum": "11",
+    "minimum": "12",
     "verified": "12"
   },
   "relationships": {
@@ -21,8 +22,8 @@
         "id": "pf2e",
         "type": "system",
         "compatibility": {
-          "minimum": "5.13.0",
-          "verified": "6.2.3"
+          "minimum": "6.3.0",
+          "verified": "6.3.1"
         }
       }
     ]
@@ -36,18 +37,8 @@
     "scripts/dark-hazard-sheet.js",
     "scripts/dark-kingdom-sheet.js",
     "scripts/dark-custom.js",
-    "scripts/simply-portraits.js",
+    "scripts/pause-icon-script.js",
     "scripts/rpg-ui.js"
-  ],
-  "styles": [
-    "css/dark-sheet.css",
-    "css/dark-party-sheet.css",
-    "css/dark-loot-sheet.css",
-    "css/dark-npc-sheet.css",
-    "css/dark-hazard-sheet.css",
-    "css/dark-kingdom-sheet.css",
-    "css/simply-portraits.css",
-    "css/dark-custom.css"
   ],
   "media": [
     {
@@ -72,6 +63,12 @@
       "lang": "es",
       "name": "Spanish (Español)",
       "path": "lang/es.json",
+      "flags": {}
+    },
+    {
+      "lang": "pl",
+      "name": "Polish (Polski)",
+      "path": "lang/pl.json",
       "flags": {}
     },
     {

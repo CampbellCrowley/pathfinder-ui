@@ -24,6 +24,9 @@
     --rpg-styled-ui-color: #837360;
     --primary-remaster: hsl(153, 100%, 8%);
 	--primary-light-remaster: hsl(170, 96%, 19%);
+
+    --ornamentation-gray: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1%7Bstroke:%23231f20;stroke-miterlimit:10%7D.st1,.st2%7Bfill:none%7D%3C/style%3E%3Cg opacity='.25'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cg%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zM3.6 3.6h3.1v3.1H3.6zM6.8 3.6h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zM3.6 6.8H.5V13M13 .5H6.8v3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4.5h3.1v3.1h-3.1zM26.3 3.6h3.1v3.1h-3.1zM26.3 6.8h3.1v3.1h-3.1zM23.1 3.6h3.1v3.1h-3.1zM26.3 3.6V.5H20'/%3E%3Cpath class='st1' d='M32.5 13V6.8h-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zM23.1 26.3h3.1v3.1h-3.1zM26.3 23.1h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zM3.6 26.3h3.1v3.1H3.6zM3.6 23.1h3.1v3.1H3.6zM6.8 26.3h3.1v3.1H6.8z'/%3E%3Cpath class='st1' d='M6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
+    
     --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
     --border-radius: 3px;
@@ -31,10 +34,19 @@
     --box-shadow: 0px 1px 3px 1px black;
     --box-shadow-light: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4), inset 0px 0px 3px 1px var(--color-cool-3);
 
-    --rarity-common: #7e7e7e;
-    --rarity-uncommon: #ff6400;
-    --rarity-rare: #0062ff;
-    --rarity-unique: #e127e1;
+    --bg3-blue: #183541;
+    --bg3-blue-light: #0c93bd;
+    --bg3-alliance-opposition-red: #de1847;
+    --button-hover-background: radial-gradient(circle, var(--bg3-alliance-opposition-red) 0, black 100%);
+    --button-toggle-hover-background: radial-gradient(circle, var(--bg3-blue-light) 0, var(--bg3-blue) 100%);
+    --text-color-1: #f7f3e8;
+    --button-hover-text-color: var(--text-color-1);
+
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
 
     --input-background-color: var(--color-cool-4);
     --input-border-color: transparent;
@@ -48,26 +60,42 @@
 
 /* Foundry2
 ====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
     --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
     --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
     --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
     --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
     --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
     --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
     --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
     --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
     --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
     --color-cool-5: #0b0a13;
     --color-cool-5-25: rgba(11, 10, 19, 0.25);
     --color-cool-5-50: rgba(11, 10, 19, 0.5);
     --color-cool-5-75: rgba(11, 10, 19, 0.75);
     --color-cool-5-90: rgba(11, 10, 19, 0.9);
-    --color-light-1: #f7f3e8;
-    --color-light-2: #efe6d8;
-    --color-light-3: #e7d1b1;
-    --color-light-4: #d0b8a3;
-    --color-light-5: #9f8475;
-    --color-light-6: #816b66;
+
     --color-level-error: #ce0707;
     --color-level-error-bg: rgba(105, 0, 8, 0.8);
     --color-level-error-border: #750003;
@@ -82,6 +110,18 @@
     --color-level-warning-border: #b18404;
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
+
+
+/* PF2e Modifiers Matter
+====================================================== */
+    --pf2emm-color-essential: #008000;
+    --pf2emm-color-essential-outline: #008000bf;
+    --pf2emm-color-helpful: #91a82a;
+    --pf2emm-color-helpful-outline: #91a82abf;
+    --pf2emm-color-harmful: #ff0000;
+    --pf2emm-color-harmful-outline: #ff0000bf;
+    --pf2emm-color-detrimental: #ff852f;
+    --pf2emm-color-detrimental-outline: #ff852fbf;
 }
 
 /* POLICES
@@ -124,7 +164,9 @@
 /* Babele */
 /* https://gitlab.com/riccisi/foundryvtt-babele */
 #actor-translate-log {
-    color: var(--main-text-very-light-color)
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    background: unset;
 }
 
 
@@ -135,7 +177,7 @@
     background: unset;
     border-left: unset;
     border-right: unset;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
 }
 #combat-dock .combatant-portrait.active {
     border-left: 1px solid #000;
@@ -220,9 +262,9 @@
     color: var(--pfui-main-color);
     background: none;
     background-color: var(--color-cool-5);
-    border-radius: var(--border-radius-5);
+    border-radius: var(--border-radius);
     border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy-shadow);
+    box-shadow: var(--box-shadow);
 }
 #combat-dock .portrait-pass i {
     filter: contrast(2);
@@ -468,69 +510,36 @@ li.hm_messagetaken {
 .minimal-ui-mode .new-logo {
     display: none!important;
 }
-.minimal-ui-mode #controls ol li.scene-control[data-control="combat-carousel"] {
-    width: var(--controlsw)!important;
-    height: var(--controlsh)!important;
+.minimal-ui-mode #navigation {
+    margin: 5px 0 0 25px;
 }
-.minimal-ui-mode #controls li[data-control="combat-carousel"]::after {
-    width: calc(var(--controlsw) - 10px)!important;
-    height: calc(var(--controlsh) - 10px)!important;
+.minimal-ui-mode #action-bar:not(.collapsed)::before {
+    background-image: none !important;
+    position: unset;
 }
-
-.minimal-ui-mode #ui-bottom > div {
-    justify-content: inherit!important;
+.minimal-ui-mode #hotbar #macro-list {
+    border: unset;
+    box-shadow: unset;
 }
-:root {
-    --hotbarvis: visible;
-    --hotbarypos: -5px;
-    --hotbarxpos: 500px;
-    --hotbarlh1: 24px;
-    --hotbarlh2: 8px;
-    --hotbarhv: -5px;
-    --hotbarmg: 0px;
-    --hotbarhh: 100%;
-    --hotbarshp: 0px;
+.minimal-ui-mode #hotbar .bar-controls {
+    box-shadow: var(--glassy);
+    background: var(--color-cool-5-50);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    text-shadow: var(--text-shadow);
+    color: var(--pfui-main-grey-color);
+    border: 1px solid var(--color-warm-5);
 }
-
-.minimal-ui-mode #hotbar {
-    left: var(--hotbarxpos);
-    bottom: var(--hotbarypos);
-    visibility: var(--hotbarvis);
-    transition: 0.5s ease-out 0.5s;
-    opacity: var(--opacity);
-    position: absolute;
+.minimal-ui-mode #hotbar .macro.inactive {
+    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    backdrop-filter: blur(5px);
+}
+.minimal-ui-mode a:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
 }
 
-:root {
-    --playervis: hidden;
-    --playerfsize: 0px;
-    --playerfsizehv: 12px;
-    --playerwidthhv: 150px;
-    --playerslh: 20px;
-    --playerbennies: none;
-    --playerh3w: unset;
-    --playerbot: -8px;
-    --playerleft: -8px;
-    --playerpingdisplay: initial;
-}
 
-.minimal-ui-mode #players {
-    bottom: var(--playerbot);
-    left: var(--playerleft);
-    font-size: var(--playerfsize);
-    visibility: var(--playervis);
-    opacity: var(--opacity);
-    box-shadow:none;
-    position: absolute;
-    border: none;
-}
-
-.minimal-ui-mode #navigation #scene-list {
-    margin-left: 16px;
-}
-.minimal-ui-mode #controls ol.main-controls {
-    width: 60px;
-}
 
 
 
@@ -609,9 +618,11 @@ li.hm_messagetaken {
   filter: brightness(1.1) saturate(1);
 }
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control {
-  border: none;
-  opacity: unset;
-  border-radius: var(--border-radius);
+    border: none;
+    opacity: unset;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(45deg, var(--color-cool-3), var(--color-cool-5-25));
 }
 #token-hud.placeable-hud.monks-little-details .status-effects .effect-control.active {
     border: 1px solid var(--color-cool-5);
@@ -635,6 +646,123 @@ li.hm_messagetaken {
 
 
 
+/* Monk's Scene Navigation */
+/* https://github.com/ironmonk88/monks-scene-navigation */
+#navigation.background .monks-scene-navigation .scene-list {
+    border: unset;
+    background-color: unset;
+    padding-top: 0;
+}
+#navigation .monks-scene-navigation .scene-list > li.context a {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/controls_btn_accent.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.active a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_active.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+
+#navigation .monks-scene-navigation .scene-list > li.active.view a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.view.gm a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.view a {
+    color: var(--color-warm-1);
+    text-align: center;
+    background: url(../ui/buttons/controls_btn_active_view_gm.webp);
+    background-size: 100% 100%;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+
+#navigation .monks-scene-navigation .scene-list > li.folder a:hover,
+#navigation.background .monks-scene-navigation .scene-list > li.folder.expanded a:hover,
+#navigation .monks-scene-navigation .scene-list > li a:hover,
+#navigation .monks-scene-navigation .scene-list > li.context a:hover,
+#navigation .monks-scene-navigation .scene-list > li.active a:hover,
+#navigation .monks-scene-navigation .scene-list > li.active.view a:hover,
+#navigation .monks-scene-navigation .scene-list > li.view.gm a:hover,
+#navigation .monks-scene-navigation .scene-list > li.view a:hover {
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li a {
+    color: var(--pfui-main-color);
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+#navigation .monks-scene-navigation .scene-list > li a::before {
+    position: absolute;
+    content: " ";
+    width: 115%;
+    height: 105%;
+    top: -3%;
+    background: url(../ui/buttons/controls_btn.webp);
+    background-size: 100% 100%;
+    z-index: -1;
+    left: -6%;
+    opacity: 0.88;
+}
+#navigation .monks-scene-navigation .scene-list > li li.active-indicator {
+    font-size: unset;
+    text-align: center;
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+#navigation .monks-scene-navigation .scene-list > li.folder a {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/button-green.webp);
+    background-size: 100% 100%;
+    border-top: unset;
+    padding-top: 7px;
+    border-left: unset;
+    border-right: unset;
+    border-radius: var(--border-radius);
+}
+#navigation.background .monks-scene-navigation .scene-list > li.folder.expanded a {
+    color: var(--pfui-main-color);
+    background: url(../ui/buttons/button-red.webp);
+    background-size: 100% 100%;
+    border-top: unset;
+    padding-top: 7px;
+    border-left: unset;
+    border-right: unset;
+    height: 32px;
+    border-radius: var(--border-radius);
+}
 
 /* Monk's Sound Enhancements */
 /* https://github.com/ironmonk88/monks-sound-enhancements */
@@ -643,8 +771,25 @@ li.hm_messagetaken {
     background: var(--color-cool-4);
 }
 
-
-
+/* Monk's Enhancement Journal */
+/* https://github.com/ironmonk88/monks-enhanced-journal */
+body[inline-roll-styling="true"] a.entity-link, 
+body[inline-roll-styling="true"] aside.locked-tooltip.link-matches a.content-link, 
+body[inline-roll-styling="true"] a.content-link, 
+body[inline-roll-styling="true"] a.inline-roll, 
+body[inline-roll-styling="true"] a.picture-link, 
+body[inline-roll-styling="true"] a.sound-link, 
+body[inline-roll-styling="true"] a.inline-request-roll, 
+body[inline-roll-styling="true"] a.tile-trigger-link {
+    font-family: 'Good OT';
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+    background: var(--color-warm-3);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius)
+}
 
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */
@@ -674,25 +819,24 @@ li.hm_messagetaken {
     background: transparent;
     backdrop-filter: blur(5px);
 }#tokenbar .token .token-stat i {
-    color: var(--green);
     filter: drop-shadow(0px 1px 1px black);
 }
 #tokenbar .token .token-stat {
-    color: var(--color-warm-1)!important;
+    color: var(--color-light-3);
     filter: drop-shadow(0px 1px 1px black);
 }
 #tokenbar .token .token-stats {
-    background: var(--color-cool-5-75);
+    background: transparent;
     border-radius: 5px;
     backdrop-filter: blur(5px);
     filter: drop-shadow(0px 1px 1px black);
 }
 #tokenbar .bar-controls {
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
     text-shadow: var(--text-shadow);
     border: 1px solid transparent;
     box-shadow: unset;
-    background: var(--color-cool-5-75);
+    background: var(--color-cool-5-25);
     border-radius: 5px;
     backdrop-filter: blur(5px);
     text-shadow: 0 0 15px var(--red-light);
@@ -707,13 +851,6 @@ li.hm_messagetaken {
     text-shadow: 0 0 15px var(--red-light);
     filter: contrast(1.5);
 }
-
-#chat .monks-tokenbar.chat-card .card-header {
-    padding: 3px 0;
-    border-top: 2px groove var(--monks-border-color);
-    border-bottom: 2px groove var(--monks-border-color);
-}
-
 #chat .monks-tokenbar.chat-card .card-footer {
     border-top: 2px groove var(--monks-border-color);
 }
@@ -738,18 +875,14 @@ li.hm_messagetaken {
     padding: 0;
     overflow-y: auto;
     scrollbar-width: thin;
-    color: var(--pfui-main-color);
-}
-
-#chat .monks-tokenbar.chat-card .card-header h3 {
-    color: var(--pfui-main-color)
+    color: var(--color-light-3);
 }
 
 #chat #requestsavingthrow .request-header {
     border-radius: 4px;
     white-space: nowrap;
     overflow-x: hidden;
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
     background: black;
     border: 2px solid var(--border-color);
     padding: 1px 8px;
@@ -760,7 +893,7 @@ li.hm_messagetaken {
     margin: 0;
     white-space: nowrap;
     overflow-x: hidden;
-    color: var(--pfui-main-color);
+    color: var(--color-light-3);
     font-weight: bold;
     padding: 1px 4px;
 
@@ -781,11 +914,50 @@ li.hm_messagetaken {
     border: 1px solid transparent;
     border-radius: var(--border-radius);
 }
-
+li.chat-message.message .message-content .monks-tokenbar *.noselect, 
+li.chat-message.message .message-content .monks-tokenbar *.noselect * {
+    color: var(--color-warm-1);
+    box-shadow: unset;
+    background: unset;
+    border: unset;
+}
+.monks-tokenbar .sheet .items-list .item {
+    border-bottom: 1px dotted var(--color-cool-3);
+}
 #chat .monks-tokenbar.chat-card .sheet .items-list {
     padding: 0;
+    background: var(--background-2);
 }
-
+#chat .monks-tokenbar .sheet .items-list .item-name h3, 
+#chat .monks-tokenbar .sheet .items-list .item-name h4 {
+    background: unset;
+}
+#chat .monks-tokenbar.chat-card .card-header {
+    padding: 3px 0;
+    border-top: unset;
+    border-bottom: unset;
+}
+#chat .monks-tokenbar.chat-card .card-header h3 {
+    color: var(--color-cool-1);
+    text-shadow: var(--text-shadow);
+}
+.monks-tokenbar li.item .dice-roll a.add-xp {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.monks-tokenbar li.item .dice-roll a.add-xp:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--background) !important;
+    border-radius: var(--border-radius);
+}
 
 
 /* PF2e Party Sheet Helper */
@@ -853,11 +1025,11 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 .pf2e-td.success {
     color: var(--color-cool-5)!important;
-	background-color: var(--rarity-rare)!important;
+	background-color: var(--color-rarity-rare)!important;
 }
 .pf2e-td.failure {
     color: var(--color-cool-5)!important;
-	background-color: var(--rarity-uncommon)!important;
+	background-color: var(--color-rarity-uncommon)!important;
 }
 .pf2e-td.criticalFailure {
     color: var(--color-cool-5)!important;
@@ -897,11 +1069,11 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     filter: drop-shadow(2px 4px 6px black) brightness(1.2);
 }
 .token-info .damage-application button.success, .token-info button.save.success {
-	background-color: var(--rarity-rare)!important;
+	background-color: var(--color-rarity-rare)!important;
     filter: drop-shadow(2px 4px 6px black) brightness(1.5);
 }
 .token-info .damage-application button.failure, .token-info button.save.failure  {
-	background-color: var(--rarity-uncommon)!important;
+	background-color: var(--color-rarity-uncommon)!important;
     filter: drop-shadow(2px 4px 6px black) brightness(1.5);
 }
 .token-info .damage-application button.criticalFailure, .token-info button.save.criticalFailure {
@@ -924,6 +1096,13 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     color: var(--color-cool-4);
 }
 
+/* PF2e target Helper */
+/* https://github.com/reyzor1991/pf2e-wiki/wiki */
+.token-info:not(.top) .name {
+    font-size: var(--font-size-9);
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
 
 
 
@@ -949,19 +1128,19 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .success, 
 .chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .success {
-    color: var(--rarity-rare);
+    color: var(--color-rarity-rare);
     text-shadow: var(--text-shadow);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.success [data-action=target-half-damage]::after {
-    box-shadow: inset 0 0 6px var(--rarity-rare);
+    box-shadow: inset 0 0 6px var(--color-rarity-rare);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .failure, 
 .chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .failure {
-    color: var(--rarity-uncommon);
+    color: var(--color-rarity-uncommon);
     text-shadow: var(--text-shadow);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.failure [data-action=target-apply-damage]::after {
-    box-shadow: inset 0 0 6px var(--rarity-uncommon);
+    box-shadow: inset 0 0 6px var(--color-rarity-uncommon);
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-header .controls .criticalFailure, 
 .chat-message .message-content+.pf2e-toolbelt-target-spell .target-header .controls .criticalFailure {
@@ -970,6 +1149,21 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
 }
 .chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application.criticalFailure [data-action=target-double-damage]::after {
     box-shadow: inset 0 0 6px var(--red-light);
+}
+.chat-message .message-content:has(>.damage-application.hidden)+.pf2e-toolbelt-target-damage hr:first-child+.target-header {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+.chat-message .message-content:has(>.damage-application.hidden)+.pf2e-toolbelt-target-damage hr:first-child+.target-header:hover {
+    color: var(--green);
+}
+.chat-message .message-content+.pf2e-toolbelt-target-damage .target-damage-application button img {
+    filter: invert(75%) sepia(1) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+}
+.chat-message .message-content .dice-result .dice-total .pf2e-toolbelt-target-buttons .targets:hover, 
+.chat-message .message-content .dice-result .dice-total .pf2e-toolbelt-target-buttons .toggle:hover {
+    color: var(--red-light)!important;
+    background: var(--color-warm-1-90)!important;
 }
 
 
@@ -1027,7 +1221,7 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     color: var(--pfui-main-grey-color)!important;
 }
 .polyglot-lang-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: var(--pfui-main-color) transparent transparent transparent;
+    border-color: var(--pfui-main-color) transparent transparent transparent!important;
 }
 .polyglot.polyglot-lang-select span.select2-selection {
     font-family: Taroca;
@@ -1042,6 +1236,9 @@ wrapper.pf2e-td.name-left .pf2e-td.damage-application {
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+}
+.select2-dropdown {
+    border: none;
 }
 .polyglot.polyglot-lang-select span.select2-selection:hover {
     border: none;
@@ -1182,33 +1379,39 @@ box-shadow: var(--box-shadow-light);
 
 /* Smalltime */
 /* https://github.com/unsoluble/smalltime */
+#smalltime-app {
+    box-shadow: var(--box-shadow);
+    width: 205px !important;
+}
 #smalltime-app .window-content {
-    filter: drop-shadow(2px 4px 6px var(--color-cool-5));
-    background: var(--color-cool-5);
-    border-radius: var(--border-radius-5);
     border: 1px solid var(--color-cool-5);
-    box-shadow: var(--glassy-shadow);
+    box-shadow: var(--box-shadow);
+    filter: drop-shadow(0px 1px 1px black);
 }
-#smalltime-app #slideContainer {
-    box-shadow: var(--glassy-shadow);
-    border-radius: var(--border-radius-5);
-}
+
 #smalltime-app.show-date #dateDisplay {
-    background: var(--color-cool-4);
-    box-shadow: var(--glassy-shadow);
-    color: var(--color-warm-1);
+    filter: drop-shadow(0px 1px 1px black);
+    backdrop-filter: blur(10px);
+    font-size: 12px;
+    background: transparent;
+    border: unset;
     text-shadow: var(--text-shadow);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--color-cool-5);
+    font-family: 'tauri';
+    text-transform: inherit;
+    color: var(--color-cool-1);
 }
 #smalltime-app #timeDisplay {
-    background: var(--color-cool-5);
-    color: var(--green);
-    border: 1px solid var(--color-cool-5);
+    font-size: 12px;
+    background: transparent;
+    border: unset;
     text-shadow: var(--text-shadow);
+    font-family: 'tauri';
+    text-transform: inherit;
+    --color-text-hyperlink: #ff6400;
+    color: var(--color-text-hyperlink);
 }
 #smalltime-app #timeDisplay:hover {
-    color: var(--color-warm-2);
+    color: var(--green);
 }
 #smalltime-app #dragHandle {
     background: var(--color-cool-5);
@@ -1218,45 +1421,29 @@ box-shadow: var(--box-shadow-light);
     border-radius: var(--border-radius);
 }
 #smalltime-app #displayContainer {
-    background: var(--color-cool-5);
-    box-shadow: var(--box-shadow);
+    background: transparent;
     border: none;
     color: var(--pfui-main-color);
     border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
 }
+#smalltime-app .arrow-left,
 #smalltime-app .arrow-right {
     background: var(--color-cool-5-25);
     box-shadow: var(--glassy-shadow);
     color: var(--color-warm-1);
     text-shadow: var(--text-shadow);
-    border-radius: var(--border-radius);
+    border-radius: 25px;
     border: 1px solid var(--color-cool-5);
-    padding-top: 2px;
+    padding-top: 1px;
 }
+#smalltime-app .arrow-left:hover,
 #smalltime-app .arrow-right:hover {
     color: var(--color-cool-5);
     text-shadow: var(--text-shadow);
     background: var(--green);
-    padding-top: 2px;
     border: 1px solid var(--color-cool-5);
 }
-#smalltime-app .arrow-left {
-    background: var(--color-cool-5-25);
-    box-shadow: var(--glassy-shadow);
-    color: var(--color-warm-1);
-    text-shadow: var(--text-shadow);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--color-cool-5);
-    padding-top: 2px;
-}
-#smalltime-app .arrow-left:hover {
-    color: var(--color-cool-5);
-    text-shadow: var(--text-shadow);
-    background: var(--green);
-    padding-top: 2px;
-    border: 1px solid var(--color-cool-5);
-}
-
 
 
 
@@ -1354,13 +1541,8 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--box-shadow);
     text-shadow: 0 0 3px black;
     border-radius: var(--border-radius);
-    backdrop-filter: blur(5px);
-}
-.placeable-hud .control-icon.active {
-    background: var(--color-cool-4);
-    border: 1px solid var(--color-warm-1);
-}
 
+}
 .placeable-hud .control-icon picture:hover {
     opacity: 1;
     filter: brightness(1.1) saturate(1.5)!important;
@@ -1376,29 +1558,110 @@ nav.damage-log-nav .item.active:before,
     backdrop-filter: brightness(0.8) blur(5px);
     filter: drop-shadow(0px 1px 1px black);
 }
-
-.placeable-hud .control-icon {
+.placeable-hud .control-icon[data-action=visibility], 
+.placeable-hud .control-icon[data-action=effects], 
+.placeable-hud .control-icon[data-action=combat], 
+.placeable-hud .control-icon[data-action=locked], 
+.placeable-hud .control-icon[data-action=target], 
+.placeable-hud .control-icon[data-action=active], 
+.placeable-hud .control-icon[data-action=mystify] {
     border-radius: 50%;
     background: none;
     box-shadow: var(--box-shadow);
     transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
     color: var(--pfui-main-color);
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 3px black;
     backdrop-filter: blur(5px);
     filter: drop-shadow(0px 1px 1px black);
+    border: 1px solid black;
+}
+.placeable-hud  .control-icon {
+    border-radius: 50%;
+    background: none;
+    box-shadow: var(--box-shadow);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    color: var(--pfui-main-color);
+    text-shadow: 0px 0px 3px black;
+    backdrop-filter: brightness(0.8) blur(5px);
+    filter: drop-shadow(0px 1px 1px black);
+    border: 1px solid black;
 }
 .placeable-hud .control-icon img {
-    filter: brightness(0.7) sepia(1) grayscale(0.7) drop-shadow(0px 1px 1px black);
+    filter: drop-shadow(0px 1px 1px black);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
 }
-
-#token-hud .status-effects .effect-control {
+.placeable-hud .control-icon[data-action=visibility]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=effects]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=combat]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=locked]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=target]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=active]:not(.disabled, :disabled):hover, 
+.placeable-hud .control-icon[data-action=mystify]:not(.disabled, :disabled):hover {
+    background: var(--button-toggle-hover-background);
+    color: var(--button-hover-text-color);
+    border: 1px solid var(--color-cool-5);
     box-shadow: var(--box-shadow);
+}
+.placeable-hud .control-icon.active > img {
+    filter: sepia(100%) saturate(2000%) drop-shadow(2px 4px 6px black) hue-rotate(-50deg);
+}
+.placeable-hud .control-icon:hover > img {
+    filter: sepia() grayscale(0.95) brightness(1) drop-shadow(0px 1px 1px black);
+}
+.placeable-hud .control-icon:not(.disabled, :disabled):hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-text-color);
+    border: 1px solid var(--color-cool-5);
+    box-shadow: var(--box-shadow);
+}
+#token-hud .attribute i.fas {
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    font-size: var(--font-size-18);
+    color: var(--color-cool-2);
+    text-shadow: 0px 1px 2px black;
+}
+.placeable-hud .control-icon[data-action=visibility].view, 
+.placeable-hud .control-icon[data-action=visibility].selected, 
+.placeable-hud .control-icon[data-action=visibility].active, 
+.placeable-hud .control-icon[data-action=effects].view, 
+.placeable-hud .control-icon[data-action=effects].selected, 
+.placeable-hud .control-icon[data-action=effects].active, 
+.placeable-hud .control-icon[data-action=combat].view, 
+.placeable-hud .control-icon[data-action=combat].selected, 
+.placeable-hud .control-icon[data-action=combat].active, 
+.placeable-hud .control-icon[data-action=locked].view, 
+.placeable-hud .control-icon[data-action=locked].selected, 
+.placeable-hud .control-icon[data-action=locked].active, 
+.placeable-hud .control-icon[data-action=target].view, 
+.placeable-hud .control-icon[data-action=target].selected, 
+.placeable-hud .control-icon[data-action=target].active, 
+.placeable-hud .control-icon[data-action=active].view, 
+.placeable-hud .control-icon[data-action=active].selected, 
+.placeable-hud .control-icon[data-action=active].active, 
+.placeable-hud .control-icon[data-action=mystify].view, 
+.placeable-hud .control-icon[data-action=mystify].selected, 
+.placeable-hud .control-icon[data-action=mystify].active {
+    background: var(--button-hover-background);
+    outline: 1px solid var(--color-warm-3);
+    text-decoration: none !important;
+    font-weight: unset !important;
+    text-shadow: var(--text-shadow);
+    animation: glow 0.75s infinite alternate;
+}
+#token-hud .status-effects .effect-control {
     filter: sepia(1) brightness(0.6);
     text-shadow: 0px 0px 3px black;
-    background: linear-gradient(45deg, var(--color-cool-3), var(--color-cool-5-25));
+}
+#token-hud .status-effects .effect-control:hover {
+    opacity: 1;
+    filter: contrast(1);
 }
 #token-hud .status-effects .effect-control.overlay {
     border: 2px solid var(--red-light);
+    border-radius: 50%;
+    filter: brightness(1);
 }
 #token-hud .status-effects .effect-control img {
     border: none;
@@ -1431,7 +1694,6 @@ nav.damage-log-nav .item.active:before,
     box-shadow: var(--box-shadow);
     text-shadow: 0px 1px 2px black;
 }
-
 
 /* Forien's Quest Log */
 /* https://github.com/League-of-Foundry-Developers/foundryvtt-forien-quest-log */
@@ -1487,6 +1749,20 @@ nav.damage-log-nav .item.active:before,
     background: var(--green);
     color: var(--color-cool-5);
     box-shadow: var(--glassy-shadow);
+}
+.window-app.forien-quest-preview .editor .editor-content a.content-link, 
+.window-app.forien-quest-preview .editor .editor-content a.inline-roll,
+.window-app.forien-quest-preview .editor .editor-content a.inline-check,
+.window-app.forien-quest-preview .editor .editor-content span[data-pf2-check],
+.window-app.forien-quest-preview .editor .editor-content [data-visibility=gm]:not(.dice-result > *) {
+	font-family: 'Good OT';
+    font-size: 14px;
+    color: var(--pfui-main-color)!important;
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 
 
@@ -1793,3 +2069,198 @@ nav.damage-log-nav .item.active:before,
     background: var(--color-warm-3);
 }
 
+
+/* Quick Insert
+-------------------------------------------------------*/
+.quick-insert-app {
+    background: none;
+    border: none;
+    border-radius: var(--border-radius);
+    background: none;
+    background-color: var(--glass-bg);
+    box-shadow: var(--glassy);
+    backdrop-filter: blur(5px);
+    color: var(--text-color-1);
+    text-shadow: 0px 1px 2px black;
+}
+.quick-insert-app .quick-insert-result li img {
+    border: 1px solid var(--tertiary);
+    border-radius: var(--border-radius);
+    background-color: var(--alt);
+}
+.quick-insert-app .search-selected a {
+    background: var(--primary);
+    text-shadow: 0px 1px 2px black !important;
+    border-radius: var(--border-radius);
+}
+.quick-insert-result li a {
+    color: var(--text-color-1);
+}
+.quick-insert-result li a:hover {
+    background: none;
+    background-color: var(--red);
+}
+.quick-insert-app .search-selected a:hover {
+    background: unset;
+    background-color: var(--red);
+}
+.quick-insert-app .search-selected a span.sub,
+.quick-insert-result li a:hover span.sub {
+    color: var(--text-color-4);
+}
+.quick-insert-app .search-editable-input {
+    background: none;
+}
+.quick-insert-hint {
+    background: none;
+}
+.quick-insert-result {
+    background: none;
+}
+.quick-insert-result li a i.action-icon {
+    opacity: 1;
+    color: var(--text-color-3);
+    background: rgba(255, 255, 255, 0.1333333333);
+}
+.quick-insert-result li span.sub {
+    color: var(--text-color-5);
+}
+
+/*pf2e-kingmaker-tools
+-------------------------------------------------------*/
+.camping-dialog a.content-link, 
+.camping-dialog a.inline-roll {
+    font-family: "Good OT";
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.camping-dialog .km-table th {
+    color: var(--color-warm-1);
+}
+.camping-dialog .km-table tr:nth-child(2n) {
+    background-color: var(--color-cool-5);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.camping-dialog .km-table tr:nth-child(2n+1) {
+    background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+.camping-dialog .km-table td {
+    border: 1px solid transparent;
+}
+
+
+/* PF2e Modifiers Matter
+====================================================== */
+#chat-log .pf2emm-highlight {
+    font-weight: bold!important;
+}
+
+#chat-log .tag_alt.pf2emm-is-ESSENTIAL {
+    background-color: var(--pf2emm-color-essential)!important;
+}
+
+#chat-log .tag_alt.pf2emm-is-HELPFUL {
+    background-color: var(--pf2emm-color-helpful)!important;
+}
+
+#chat-log .tag_alt.pf2emm-is-HARMFUL {
+    background-color: var(--pf2emm-color-harmful)!important;
+}
+
+#chat-log .tag_alt.pf2emm-is-DETRIMENTAL {
+    background-color: var(--pf2emm-color-detrimental)!important;
+}
+
+#chat-log .tag_transparent.pf2emm-is-ESSENTIAL {
+    color: var(--pf2emm-color-essential)!important;
+    box-shadow: inset 0 0 0 1px var(--pf2emm-color-essential-outline)!important;
+}
+
+#chat-log .tag_transparent.pf2emm-is-HELPFUL {
+    color: var(--pf2emm-color-helpful)!important;
+    box-shadow: inset 0 0 0 1px var(--pf2emm-color-helpful-outline)!important;
+}
+
+#chat-log .tag_transparent.pf2emm-is-HARMFUL {
+    color: var(--pf2emm-color-harmful)!important;
+    box-shadow: inset 0 0 0 1px var(--pf2emm-color-harmful-outline)!important;
+}
+
+#chat-log .tag_transparent.pf2emm-is-DETRIMENTAL {
+    color: var(--pf2emm-color-detrimental)!important;
+    box-shadow: inset 0 0 0 1px var(--pf2emm-color-detrimental-outline)!important;
+}
+
+#chat-log .pf2emm-suffix.pf2emm-is-ESSENTIAL {
+    color: var(--pf2emm-color-essential)!important;
+}
+
+#chat-log .pf2emm-suffix.pf2emm-is-HELPFUL {
+    color: var(--pf2emm-color-helpful)!important;
+}
+
+#chat-log .pf2emm-suffix.pf2emm-is-HARMFUL {
+    color: var(--pf2emm-color-harmful)!important;
+}
+
+#chat-log .pf2emm-suffix.pf2emm-is-DETRIMENTAL {
+    color: var(--pf2emm-color-detrimental)!important;
+}
+
+
+/* PF2e HUD - la suite dans le fichier pf2e-hud.css
+====================================================== */
+#pf2e-hud-persistent #action-bar:not(.collapsed)::before {
+    background-image: none !important;
+    position: unset;
+}
+#interface:has(#pf2e-hud-tracker) #sidebar {
+    box-shadow: unset;
+}
+/*Other*/
+.chat-message.message .pf2e-hud-rk .rk .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+  .chat-message.message .pf2e-hud-rk .rk {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-skills .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-skills {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores-rolls .header {
+    color: var(--pfui-main-color);
+    text-shadow: var(--text-shadow);
+}
+.chat-message.message .pf2e-hud-rk .rk-lores-rolls {
+    color: var(--pfui-main-grey-color);
+    background: repeating-linear-gradient(var(--color-cool-3) 0 var(--row-height), var(--color-cool-4-90) var(--row-height) calc(var(--row-height) * 2));
+    text-shadow: var(--text-shadow);
+}

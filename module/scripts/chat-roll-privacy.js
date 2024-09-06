@@ -84,18 +84,26 @@ export default class ChatRollPrivacy {
   }
 
   static async _handleChatLogRendering(chat, html, data) {
-    const modes = Object.keys(data.rollModes);
     const buttons = [];
     const iconKeys = Object.keys(ICONS_FOR_KNOWN_ROLL_TYPES);
-    for (let c = 0; c < modes.length; c++) {
-      const rt = modes[c];
+    for (const [k, v] of Object.entries(data.rollModes)) {
+      let rt, name;
+
+      if (foundry.utils.isNewerVersion(game.version, 12)) {
+        rt = v.value;
+        name = v.label;
+      } else {
+        rt = k;
+        name = v;
+      }
+
       if (!(rt in ICONS_FOR_KNOWN_ROLL_TYPES)) {
         console.warn(Error(`Unknown roll type '${rt}'`));
         continue;
       }
       buttons.push({
         rt: rt,
-        name: game.i18n.localize(data.rollModes[rt]),
+        name: game.i18n.localize(name),
         active: data.rollMode === rt,
         icon: ICONS_FOR_KNOWN_ROLL_TYPES[rt],
         colour: ChatRollPrivacy.calcColour(iconKeys.findIndex(x => x == rt), iconKeys.length),

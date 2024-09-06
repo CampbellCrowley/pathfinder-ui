@@ -1,0 +1,1058 @@
+/* A bunch of disgusting CSS overrides that hit the system's CSS like a hammer to remove as much colour as possible */
+
+.dark-bw-theme {
+    --alternate-background: darkgrey;
+    --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
+    --green: #91a82a;
+    --blue: #171f69;
+    --red: #5e0000;
+    --red-light:#ff0000;
+    --custom-trait:#61180e;
+    --background: #100d0d;
+    --background-2: #ffffff14;
+    --highlight: 0 0 0 1px var(--pfui-main-color), 0 0 0 2px #93d1d3, inset 0 0 4px rgba(255, 255, 255, 0.25);
+    --glass-bg: rgba(20, 20, 20, 0.6);
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-light-2: #3f342b;
+    --glass-bg-dark: rgba(0, 0, 0, 0.7);
+    --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glassy-sharp: 0px 0px 0px 1px rgba(255, 255, 255, 0.4) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    --glassy-sharp-highlight: 0px 0px 0px 1px rgba(245, 222, 179, 0.7) inset, 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+	--primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
+    
+    --ornamentation-gray: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1%7Bstroke:%23231f20;stroke-miterlimit:10%7D.st1,.st2%7Bfill:none%7D%3C/style%3E%3Cg opacity='.25'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cg%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zM3.6 3.6h3.1v3.1H3.6zM6.8 3.6h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zM3.6 6.8H.5V13M13 .5H6.8v3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4.5h3.1v3.1h-3.1zM26.3 3.6h3.1v3.1h-3.1zM26.3 6.8h3.1v3.1h-3.1zM23.1 3.6h3.1v3.1h-3.1zM26.3 3.6V.5H20'/%3E%3Cpath class='st1' d='M32.5 13V6.8h-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zM23.1 26.3h3.1v3.1h-3.1zM26.3 23.1h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zM3.6 26.3h3.1v3.1H3.6zM3.6 23.1h3.1v3.1H3.6zM6.8 26.3h3.1v3.1H6.8z'/%3E%3Cpath class='st1' d='M6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
+    
+    --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    --primary: var(--red);
+    --secondary: var(--blue);
+    --tertiary: var(--pfui-main-color);
+    --tertiary-dark: var(--pfui-main-color);
+    --tertiary-light: var(--pfui-main-color);
+    --body: var(--pfui-main-color);
+    --text-dark: var(--pfui-main-color);
+    --text-light: var(--pfui-main-color);
+    --sidebar-label: var(--pfui-main-color);
+    --sidebar-title: var(--pfui-main-color);
+    
+    --window-app-background: radial-gradient(circle at bottom right, #2c282433 0%, #2c2824ff 50%, #0c0804ee 100%), radial-gradient(circle at center, transparent 0, #0c0804ee 100%);
+    --border-radius: 3px;
+    --border-radius-5: 5px;
+    --box-shadow: 0px 1px 3px 1px black;
+    --text-shadow: 0px 1px 2px black;
+
+    --alt: #786452;
+    --sub: var(--background);
+
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
+    
+/* Foundry2
+====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
+    --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
+    --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
+    --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
+    --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
+    --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
+    --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
+    --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
+    --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
+    --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
+
+}
+
+/*************************************************************/
+/*====================== Black Windows ======================*/
+/*************************************************************/
+.app.window-app, 
+.app.window-app.dialog, 
+.app.window-app.folder-edit {
+    background: unset;
+    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    backdrop-filter: blur(15px);
+}
+.window-app.dialog .window-header, 
+.window-app .window-header {
+    background: unset;
+    box-shadow: unset;
+    border: none;
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
+.window-app .window-content,
+.window-app.dialog .window-content, 
+.window-app.folder-edit .window-content { 
+    background: unset;
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
+.actor.sheet section.window-content {
+    background: url(../ui/frames/parchment.webp) repeat;
+    color: var(--color-text-dark-primary);
+    backdrop-filter: unset;
+}
+form .notes, 
+form .hint {
+    color: var(--pfui-main-grey-color);
+}
+h2 {
+    border-bottom: 1px dotted var(--red);
+}
+a:hover {
+    text-shadow: var(--text-shadow);
+    color: var(--color-warm-1);
+}
+.dialog-buttons button,
+#support-details button,
+.window-app form button,
+.roll-modifiers-dialog .roll,
+.pause-icon.pi-settings-save,
+.loot-actor-popup .confirm-button,
+.dialog .dialog-buttons button,
+.dialog .dialog-buttons button:last-child,
+.package-configuration aside.sidebar .reset-all,
+#module-management .package-list .package .package-overview .tag.expand,
+.attribute-builder .window-content .summary-row button.complete {
+    font-weight: 600;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.window-app form button:hover,
+.loot-actor-popup .confirm-button:hover,
+.package-configuration aside.sidebar .reset-all:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--background) !important;
+    border-radius: var(--border-radius);
+}
+.window-app .window-resizable-handle {
+    --color-primary-3: #5d142b;
+    --color-primary-4: #420418;
+    --window-app-border-color: #302831;
+    background: var(--color-primary-4);
+    border: 1px solid var(--window-app-border-color);
+    --border-radius: 2px;
+    border-radius: 4px 0px var(--border-radius) 0px;
+    border-bottom-color: var(--color-primary-3);
+    border-right-color: var(--color-primary-3);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    filter: drop-shadow(0px 1px 1px black);
+    bottom: -1px;
+    right: -1px;
+    z-index: 2;
+}
+.dialog input:focus, 
+.folder-edit input:focus {
+    box-shadow: none;
+    outline: 1px solid #584a75;
+}
+.actor.sheet section.window-content::before,
+.sheet.kingdom-builder button.complete:disabled::before,
+.actor.sheet section.window-content button.blue::before,
+.attribute-builder .window-content .row-column button:hover,
+.attribute-builder .window-content .row-column button::before,
+.sheet.kingdom-builder .ability-builder .row-column button:disabled::before,
+.actor.npc.sheet form .sheet-body .footer button.spellcasting-create::before {
+    background: unset;
+}
+.app.tag-selector form > footer {
+    border: unset;
+}
+nav.list-filters a.filter {
+    border-bottom: 2px solid var(--color-warm-2);
+}
+nav.list-filters a.filter.active {
+    border-bottom: 2px solid var(--red-light);
+}
+.pf2e.item.sheet form > header input[type=text], 
+.pf2e.item.sheet form > header input[type=number] {
+    color: var(--pfui-main-grey-color);
+}
+input[type="date"], 
+input[type="time"], 
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+.directory .directory-header .header-search input,
+.attribute-builder .window-content .summary-row .row-column input {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="password"]:focus, 
+input[type="date"]:focus, 
+input[type="time"]:focus, 
+input[type="search"]:focus {
+    box-shadow: none;
+    outline: 1px solid #584a75;
+    color: var(--color-light-3);
+}
+input[type="range"] + .range-value {
+    border: unset;
+    color: var(--color-warm-1);
+    background: var(--input-background-color);
+    font-weight: bold;
+    border-radius: var(--border-radius-5);
+}
+.actor.sheet input[type="text"],
+.actor.sheet input[type="number"] {
+    background: unset;
+}
+input[type=range] {
+    background: transparent!important
+}
+
+/* Package Configuration
+***********************************/
+.package-configuration aside.sidebar {
+    border-right: 1px dotted var(--red);
+}
+.package-configuration aside.sidebar nav.tabs .category-tab.active {
+    color: var(--color-warm-1);
+    background: var(--color-warm-3);
+    border-top: 1px solid var(--color-warm-2);
+    border-bottom: 1px solid var(--color-warm-2);
+    border-radius: var(--border-radius);
+}
+.package-configuration aside.sidebar nav.tabs .category-tab {
+    border-bottom: unset;
+}
+select {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+}
+#permissions-config header.table-header {
+    background: unset;
+    border: unset;
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
+#permissions-config .hint {
+    color: var(--pfui-main-grey-color);
+}
+.standard-form .form-group > label {
+    color: var(--color-warm-1);
+}
+.standard-form .form-group > label:hover {
+    color: var(--green);
+}
+
+/* Package List
+***********************************/
+.package-list .package {
+    border-bottom: 1px dotted var(--color-cool-4);
+}
+.package-list .package:hover {
+    color: var(--pfui-main-color);
+    background: var(--color-cool-4-90);
+}
+/* Module Management +
+***********************************/
+#module-management .package-list .package-title {
+    color: var(--pfui-main-grey-color);
+}
+#module-management .package-list .package-description {
+    color: var(--color-cool-1);
+} 
+#module-management .package-list .package-metadata {
+    color: var(--color-cool-2);
+}
+#module-management .package-list,
+#module-management nav.list-filters button,
+#module-management nav.list-filters input, 
+#module-management nav.list-filters select {
+    border: 1px solid transparent;
+}
+
+/* Keybinding
+***********************************/
+#keybindings .binding .key {
+    text-shadow: var(--text-shadow);
+}
+#keybindings .binding .key.uneditable {
+    background: var(--color-cool-4);
+    text-shadow: var(--text-shadow);
+}
+#keybindings .action {
+    border-bottom: 1px dotted var(--color-cool-4);
+}
+
+
+/* Sheet PF2e
+***********************************/
+.sheet nav.sheet-tabs {
+    border: none;
+}
+.tabs .item.active,
+.pf2e.item.sheet form > nav > .tabs > a.active {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+input[type="color"][data-edit] {
+    border: unset;
+}
+.editor-edit {
+    background-color: transparent;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+.editor-edit:hover {
+    color: var(--color-warm-2);
+}
+.pf2e.item.sheet form .sheet-body .tab.active.description .editor a.add-gm-notes, 
+.pf2e.item.sheet form .sheet-body .tab.active.description .editor a.editor-edit {
+    background-color: transparent;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}.pf2e.item.sheet form .sheet-body .tab.active.description .editor a.add-gm-notes:hover, 
+.pf2e.item.sheet form .sheet-body .tab.active.description .editor a.editor-edit:hover {
+    color: var(--color-warm-2);
+}
+.tags.paizo-style tag, .tags.paizo-style .tag, .tags.paizo-style select.tag {
+    border: solid transparent;
+}
+.pf2e.item.sheet form .sheet-body .tab.active label {
+    color: var(--color-cool-1);
+}
+.pf2e.item.sheet form .sheet-content input:disabled, 
+.pf2e.item.sheet form .sheet-content select:disabled {
+    color: var(--color-cool-4);
+}
+.pf2e.item.sheet form .sheet-content input {
+    color: var(--color-cool-5);
+}
+.pf2e.item.sheet form .form-group input.adjusted-higher:not(:focus),
+.pf2e.item.sheet form .form-group select.adjusted-higher:not(:focus) {
+  text-shadow: var(--text-shadow);
+}
+.pf2e.item.sheet form .form-group input.adjusted-lower:not(:focus),
+.pf2e.item.sheet form .form-group select.adjusted-lower:not(:focus) {
+  text-shadow: var(--text-shadow);
+}
+.attribute-builder .window-content .title {
+    color: var(--color-cool-1);
+}
+.attribute-builder .window-content .row-column button:disabled {
+    background: rgb(0 0 0 / 96%);
+    opacity: 0.4;
+}
+.attribute-builder .window-content .row-column button.boost,
+.attribute-builder .window-content .row-column button.apex {
+    --button-color: var(--green);
+    --button-locked-color: var(--green);
+}
+.attribute-builder .window-content .row-column button.flaw {
+    --button-color: var(--red-light);
+    --button-locked-color: var(--red-light);
+}
+.attribute-builder .window-content .row-column button.boost:hover, 
+.attribute-builder .window-content .row-column button.apex:hover, 
+.attribute-builder .window-content .row-column button.flaw:hover {
+    background-color: var(--button-color);
+    color: revert;
+    opacity: 0.7;
+}
+.attribute-builder .window-content h4 {
+    color: var(--pfui-main-grey-color);
+}
+.attribute-builder .window-content .summary-row .hint-container {
+    background: var(--color-cool-4);
+    border: unset;
+}
+.attribute-builder .window-content .summary-row .hint-container h3 {
+    color: var(--red-light);
+}
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), 
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+    color: var(--text-dark);
+}
+.actor.sheet section.window-content button::before {
+    background: unset;
+}
+.actor.sheet.character section.window-content .crb-style .sheet-body .sheet-content > .tab.active.proficiencies ul.proficiencies-list li .name {
+    color: unset;
+}
+.actor.sheet section.window-content form.crb-style section.major > header button, 
+.actor.sheet section.window-content form.crb-style section.major > .subsection > header button {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+}
+.sheet.party header.content-header button:hover,
+.actor.sheet section.window-content form.crb-style section.major > header button:hover, 
+.actor.sheet section.window-content form.crb-style section.major > .subsection > header button:hover,
+.actor.sheet.character section.window-content .crb-style aside .sidebar header button:hover,
+.sheet.actor.loot form section.sidebar .gm-settings .loot-distribution button:hover {
+    background: var(--green);
+    color: var(--background);
+    box-shadow: var(--box-shadow);
+    filter: none;
+}
+.actor.sheet section.window-content .currency li > button::before {
+    background: unset;
+    background-color: var(--tertiary);
+}
+.tags.paizo-style tag > div,
+.tags.paizo-style tag:first-child, 
+.tags.paizo-style select.tag:first-child {
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+tags.pf2e-tagify:not(.tagify--select) > span, 
+tags.tags.paizo-style:not(.tagify--select) > span {
+    min-width: 20px;
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+[data-visibility]:not([data-visibility=all])[data-visibility=gm] {
+    font-style: italic;
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--color-warm-3);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+[data-visibility]:not([data-visibility=all]) {
+    outline: none;
+    padding: 2px;
+}
+span[data-pf2-effect-area] {
+    font-family: "Good OT";
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+a.inline-check[data-pf2-traits*=secret], 
+span[data-pf2-check][data-pf2-traits*=secret] {
+    font-family: "Good OT";
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    border-radius: var(--border-radius);
+}	
+a.inline-check, 
+span[data-pf2-check] {
+    font-family: "Good OT";
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+a.inline-check, 
+span[data-pf2-action] {
+    font-family: "Good OT";
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+a.content-link, 
+a.inline-roll, 
+.application .content-link, 
+.application .inline-roll {
+    font-family: "Good OT";
+    --content-link-background: var(--custom-trait);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--custom-trait);
+    padding: 0px 3px;
+    border: 1px solid var(--glassy);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.spellcasting-entry.preparation > .window-content ol.spell-list > li .item-name h4 > a:hover {
+    color: var(--green);
+    text-shadow: none;
+}
+
+/* Sheet
+***********************************/
+.app.token-sheet .tab.active[data-tab=appearance] fieldset > legend {
+    color: var(--color-cool-1);
+}
+.app.token-sheet .tab.active[data-tab=appearance] fieldset {
+    border: 1px dotted var(--color-cool-3);
+}
+form .form-group .form-fields string-tags > button,
+form .form-group .form-fields document-tags > button,
+form .form-group .form-fields file-picker > button {
+    color: var(--green);
+}
+form .form-group span.units {
+    color: var(--color-cool-1);
+}
+form .form-group.slim .form-fields > label {
+    color: var(--color-cool-1);
+}
+textarea {
+    color: var(--green);
+}
+#support-report {
+    border: 2px dashed var(--color-cool-4);
+    color: var(--green);
+}
+.pf2e.item.sheet form .sheet-content section.sidebar .item-summary, 
+.pf2e.item.sheet form .sheet-content section.sidebar .tags-title {
+    color: var(--color-cool-1);
+}
+.pf2e.item.sheet.feat form .sidebar .prerequisites ul .tag {
+    color: var(--color-cool-2);
+}
+.sheet.actor.loot form .sheet-header h1, 
+.sheet.actor.loot form .sheet-header input {
+    color: var(--color-text-dark-input);
+}
+.app.choice-set-prompt .window-content .choices .drop-zone span {
+    color: var(--pfui-main-grey-color);
+}
+.app.choice-set-prompt .window-content .choices .drop-zone span:hover {
+    color: var(--background) !important;
+}
+.app.choice-set-prompt .window-content .choices button.with-image,
+.app.choice-set-prompt .window-content .choices .drop-zone.with-image,
+.app.choice-set-prompt .window-content .choices button:not(.with-image),
+.app.choice-set-prompt .window-content .choices .drop-zone:not(.with-image),
+.app.choice-set-prompt .window-content .choices .choice-buttons .choice a.item-info {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.app.choice-set-prompt .window-content .choices button.with-image:hover,
+.app.choice-set-prompt .window-content .choices .drop-zone.with-image:hover,
+.app.choice-set-prompt .window-content .choices button:not(.with-image):hover,
+.app.choice-set-prompt .window-content .choices .drop-zone:not(.with-image):hover,
+.app.choice-set-prompt .window-content .choices .choice-buttons .choice a.item-info:hover {
+    border: none;
+    background: none;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow) !important;
+    color: var(--background) !important;
+    border-radius: var(--border-radius);
+}
+.app.choice-set-prompt .window-content .choices.select-menu tags .tagify__input {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+    color: var(--color-cool-5);
+    text-shadow: var(--text-shadow);
+}
+.tagify__dropdown__wrapper {
+    color: var(--pfui-main-color);
+    background: var(--background);
+    border: unset;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer, 
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer, 
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer,
+#compendium-browser > section.window-content > .content-box .compendium-browser-settings form .setting-section, 
+#license-viewer > section.window-content > .content-box .compendium-browser-settings form .setting-section {
+    border: 1px dotted var(--color-cool-3-90);
+}
+#compendium-browser > section.window-content > .content-box .compendium-browser-settings nav, 
+#license-viewer > section.window-content > .content-box .compendium-browser-settings nav,
+#compendium-browser > section.window-content > .content-box > nav,
+#license-viewer > section.window-content > .content-box > nav {
+    background: var(--color-warm-4);
+    text-shadow: var(--text-shadow);
+}
+#compendium-browser > section.window-content > .content-box .compendium-browser-settings button.save-settings, 
+#license-viewer > section.window-content > .content-box .compendium-browser-settings button.save-settings,
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters, 
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters, 
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters,
+#compendium-browser > section.window-content > .content-box .spell-browser .list-buttons button, 
+#license-viewer > section.window-content > .content-box .spell-browser .list-buttons button,
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer div.title button, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer div.title button, 
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer div.title button, 
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer div.title button {
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    text-decoration: none;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+#compendium-browser > section.window-content > .content-box .compendium-browser-settings button.save-settings:hover, 
+#license-viewer > section.window-content > .content-box .compendium-browser-settings button.save-settings:hover,
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters:hover, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer button.clear-filters:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer button.clear-filters:hover,
+#compendium-browser > section.window-content > .content-box .spell-browser .list-buttons button:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .list-buttons button:hover,
+#compendium-browser > section.window-content > .content-box .spell-browser .filtercontainer div.title button:hover, 
+#compendium-browser > section.window-content > .content-box .spell-browser .sortcontainer div.title button:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .filtercontainer div.title button:hover,
+#license-viewer > section.window-content > .content-box .spell-browser .sortcontainer div.title button:hover {
+    color: var(--color-cool-5);
+    background-color: var(--green);
+    border: 1px solid lightgreen;
+    box-shadow: var(--box-shadow-light);
+}
+#compendium-browser > section.window-content > .content-box .spell-browser ul.result-list > li:hover, 
+#license-viewer > section.window-content > .content-box .spell-browser ul.result-list > li:hover {
+    color: var(--green);
+    background: radial-gradient(var(--background-2), transparent);
+    text-shadow: var(--text-shadow);
+}
+.pf2e.item.sheet form .sheet-body .tab.active.description .gm-notes {
+    background-color: unset;
+    border: unset;
+    flex: 0 0 auto;
+    background: radial-gradient(var(--color-cool-3-90), var(--color-cool-4-90));
+    box-shadow: var(--box-shadow);
+    border-image-repeat: repeat;
+    border-image-slice: 11;
+    border-image-source: var(--ornement);
+    border-image-width: 14px;
+    border-style: double;
+    padding: 3px 10px;
+    font-weight: 500;
+}
+.app.npc-skills-editor form ol li.skill:nth-child(even) {
+    background-color: var(--color-cool-5);
+}
+.app.npc-skills-editor form ol li.skill:nth-child(odd) {
+    background-color: var(--color-cool-4);
+}
+.app.npc-skills-editor form ol li.skill.header {
+    background-color: var(--color-warm-3);
+}
+
+
+/* Rules Elements
+***********************************/
+.pf2e.item.sheet form .tab.active.rules .rule-editing > .cm-editor, 
+.pf2e.item.sheet form .item-rules .rule-editing > .cm-editor {
+    background: var(--color-cool-4);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border-color);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
+   .ͼ2 .cm-content {
+    caret-color: white;
+  }
+   .ͼ2 .cm-gutters {
+    background-color: var(--application-bg);
+    --color-primary-2:#c9593f;
+    border-right: 1px solid var(--color-primary-2);
+    border: unset;
+  }
+   .ͼ2 .cm-activeLineGutter {
+    --color-primary-1:#ee9b3a;
+    background-color: var(--color-primary-1);
+    color: black;
+  }
+   .ͼ2 .cm-activeLine {
+    --color-primary-2:#c9593f;
+    background-color: color-mix(in srgb, var(--color-primary-2) 20%, transparent);
+  }
+   .ͼ1.cm-focused .cm-matchingBracket {
+    background-color: yellow;
+    color: black;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px black;
+  }
+   .ͼe {
+    color: var(--red-light);
+  }
+   .ͼd {
+    color: greenyellow;
+  }
+   .ͼc {
+    color: var(--color-level-info);
+  }
+   .ͼb {
+    color: rgb(217, 31, 217);
+  }
+   .ͼ1 .cm-lintPoint:after {
+    border-bottom: 4px solid var(--primary-light);
+  }
+
+
+
+/*Filepicker
+***********************************/
+.filepicker .directory {
+    border: 1px dotted var(--color-cool-4);
+}
+.filepicker .directory > li {
+    border: 1px dotted var(--color-cool-4);
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+}
+.filepicker .directory > li:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+.filepicker .favorites .path {
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    background: var(--red);
+    border: none;
+}
+.filepicker .favorites .path a.link[data-source]::before {
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+}
+.filepicker .favorites .path .remove {
+    border-left: unset;
+}
+.filepicker .display-modes a {
+    border: unset;
+    background: var(--color-warm-3);
+}
+.filepicker .display-modes a:hover {
+    color: var(--color-warm-1);
+}
+.filepicker .display-modes a.active,
+.prosemirror menu button:hover,
+.prosemirror menu button.active {
+    border: unset;
+    background: var(--color-warm-1);
+    color: var(--color-warm-5);
+}
+
+
+/* Journal Sheet
+***********************************/
+.journal-sheet .journal-header .title {
+    background: var(--input-background-color);
+    color: var(--color-warm-2);
+    text-shadow: var(--text-shadow);
+    border: 1px solid var(--color-cool-3-90);
+}
+.sheet.journal-entry .journal-entry-pages {
+    color: var(--color-text-dark-primary);
+}
+.prosemirror menu button,
+.prosemirror menu .pm-dropdown {
+    border: unset;
+    background: var(--color-warm-3-90);
+}
+.prosemirror menu .pm-dropdown ul {
+    background: radial-gradient(var(--color-cool-4-90) -200%, var(--color-cool-5-90));
+    color: var(--pfui-main-grey-color);
+    border: unset;
+}
+.prosemirror menu .pm-dropdown li:hover {
+    background: var(--color-cool-3-90);
+    color: var(--pfui-main-grey-color);
+    border: unset;
+}
+
+/* Homebrew Elements
+***********************************/
+#homebrew-settings section.window-content .form-group.language-rarity ul li {
+    color: var(--background);
+    background: rgba(255, 255, 255, 0.4);
+}
+#homebrew-settings section.window-content .form-group.language-rarity ul {
+    border: 1px dotted var(--color-cool-3-90);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.common li:hover {
+    --color-rarity-common: var(--color-cool-1);
+    --tag-color: var(--color-rarity-common);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.uncommon li:hover {
+    --tag-color: var(--color-rarity-uncommon);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.rare li:hover {
+    --tag-color: var(--color-rarity-rare);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.language-rarity.secret li:hover {
+    --tag-color: var(--red-light);
+    background: var(--tag-color);
+    color: var(--background);
+}
+#homebrew-settings section.window-content .form-group.setting tags {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+
+/*TABLES*/
+table,
+table.pf2e,
+table.pf2-table {
+	font-family: "Good OT";
+	max-width: calc(100% - 24px);
+	margin-left: auto;
+	margin-right: auto;
+	border: unset;
+	box-shadow: var(--box-shadow);
+}
+table th,
+table.pf2e th,
+table.pf2-table th {
+    color: var(--color-warm-1);
+    background-color: var(--color-cool-5);
+}
+table tr:nth-child(2n), 
+table.pf2e tr:nth-child(even), 
+table.pf2-table tr:nth-child(even) {
+    background-color: var(--color-cool-5);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+table tr:nth-child(2n+1),
+table.pf2e tr:nth-child(odd), 
+table.pf2-table tr:nth-child(odd) {
+	background-color: var(--color-cool-4);
+    --input-text-color: var(--color-light-3);
+    color: var(--input-text-color);
+    text-shadow: var(--text-shadow);
+}
+table td,
+table th,
+table.pf2e table td,
+table.pf2e table th,
+table.pf2-table table td,
+table.pf2-table table th {
+	padding: 4px 6px;
+}
+
+
+/*KINGMAKER*/
+.pf2e-km table th,
+.pf2e-km table tr:nth-child(2n+1),
+.pf2e-km table tr:nth-child(2n),
+.pf2e-km table {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+    text-shadow: unset;
+}
+.pf2e-km a.content-link, 
+.pf2e-km a.inline-roll {
+    box-shadow: unset;
+}
+div.journal-sheet.window-app.pf2e-km .journal-page-content p, 
+div.adventure-importer.window-app.pf2e-km .window-content p, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content li, 
+div.adventure-importer.window-app.pf2e-km .window-content li, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content label, 
+div.adventure-importer.window-app.pf2e-km .window-content label {
+    color: var(--color-text-dark-primary);
+}
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social strong, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social ul.outcomes strong, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social h1, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social h2, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social h3, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .with-repost, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .content-link, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .inline-roll, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .inline-check, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span[data-visibility]:not([data-visibility=all]), 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .with-repost > i, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social .content-link > i, 
+div.journal-sheet.window-app.pf2e-km .journal-page-content section.social span.magic {
+    box-shadow: none;
+}
+
+
+/*ITEM-PILES*/
+.item-piles-odd-color:nth-child(odd) {
+    --item-piles-even-color: var(--color-cool-5-25);
+}
+
+
+/*xdy-pf2e-workbench*/
+/*https://github.com/xdy/xdy-pf2e-workbench/*/    
+.xdy-pf2e-workbench-rarity-common {
+    border-color: var(--color-cool-1);
+    color: var(--color-cool-1);
+}
+.xdy-pf2e-workbench-rarity-uncommon {
+    border-color: var(--color-rarity-uncommon);
+    color: var(--color-rarity-uncommon);
+}
+.xdy-pf2e-workbench-rarity-rare {
+    border-color: var(--color-rarity-rare);
+    color: var(--color-rarity-rare);
+}
+.xdy-pf2e-workbench-rarity-unique {
+    --color-rarity-unique: #e127e1;
+    border-color: var(--color-rarity-unique);
+    color: var(--color-rarity-unique);
+}
+
+/*Module Management+*/
+
+
+/*Monk's TokenBar*/
+.monks-tokenbar .sheet .items-list .item-name h3, 
+.monks-tokenbar .sheet .items-list .item-name h4 {
+    color: var(--pfui-main-grey-color);
+}
+#requestsavingthrow .request-grid > div {
+    color: var(--pfui-main-grey-color);
+}
+#requestsavingthrow .request-header {
+    color:var(--color-warm-1);
+}
+.monks-tokenbar .sheet .items-list .items-header {
+    color: var(--color-cool-1);
+    border: unset;
+    text-shadow: var(--text-shadow);
+}
+.monks-tokenbar a:hover {
+    color: var(--color-warm-1);
+    text-shadow: var(--text-shadow);
+}
+#requestsavingthrow .request-grid > div.selected, 
+#requestsavingthrow .request-grid > div:hover {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+#requestsavingthrow .request-grid > div.selected {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    outline: 1px solid transparent;
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+    box-shadow: none;
+    outline: 1px solid #584a75;
+}
+.monks-tokenbar .sheet select {
+    border: 0;
+    background: var(--rpg-styled-ui-color);
+}

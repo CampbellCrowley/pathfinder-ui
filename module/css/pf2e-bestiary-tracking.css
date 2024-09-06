@@ -1,0 +1,391 @@
+:root{
+    --glassy: 0px 0px 3px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 2px 1px rgba(0, 0, 0, 1), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    --glassy-shadow: var(--glassy) , var(--box-shadow);
+    --glass-bg: rgba(20, 20, 20, 0.6);
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-bg-dark: rgba(0, 0, 0, 0.7);
+    --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+    --pf2e-translucent-middle: var(--pf2e-translucent-middle-for-light);
+    --pf2e-translucent-middle-for-light: hsla(0, 0%, 80%,0.5);
+    --pf2e-translucent-very: var(--pf2e-translucent-very-for-light);
+    --pf2e-transcluent-very-for-light: hsla(0, 0%, 60%,0.2);
+    --header-text-shadow: var(--pf2e-shadow-is-dark);
+    --pf2e-shadow-is-dark: 0px 1px var(--pf2e-half-transparent-dark);
+    --filter-dark: invert(100%) drop-shadow(0px 1px 1px black);
+    --pf2e-half-transparent-dark: hsla(0, 0%, 0%,0.5);
+    --color-text-hyperlink: #ff6400;
+    --gold-and-glow: 0 0 0 1px var(--tertiary), 0 0 0 2px #9f725b, inset 0 0 3px rgba(255, 255, 255, .5);
+    --red: #5e0000;
+    --red-light:#ff0000;
+    --custom-trait:#61180e;
+    --green: #91a82a;
+    --pfui-main-color: #cfbda7;
+    --pfui-main-grey-color: #98968a;
+    --rpg-styled-ui-color: #837360;
+    --primary-remaster: hsl(153, 100%, 8%);
+	--primary-light-remaster: hsl(170, 96%, 19%);
+
+    --ornamentation-gray: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1%7Bstroke:%23231f20;stroke-miterlimit:10%7D.st1,.st2%7Bfill:none%7D%3C/style%3E%3Cg opacity='.25'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cg%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zM3.6 3.6h3.1v3.1H3.6zM6.8 3.6h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zM3.6 6.8H.5V13M13 .5H6.8v3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4.5h3.1v3.1h-3.1zM26.3 3.6h3.1v3.1h-3.1zM26.3 6.8h3.1v3.1h-3.1zM23.1 3.6h3.1v3.1h-3.1zM26.3 3.6V.5H20'/%3E%3Cpath class='st1' d='M32.5 13V6.8h-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zM23.1 26.3h3.1v3.1h-3.1zM26.3 23.1h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zM3.6 26.3h3.1v3.1H3.6zM3.6 23.1h3.1v3.1H3.6zM6.8 26.3h3.1v3.1H6.8z'/%3E%3Cpath class='st1' d='M6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
+    
+    --ornement : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' overflow='scroll'%3E%3Cstyle%3E.st1{stroke:wheat;stroke-miterlimit:10}.st1,.st2{fill:none}%3C/style%3E%3Cg opacity='0.75'%3E%3Cpath class='st1' d='M.5 20v-7'/%3E%3Cpath class='st2' d='M13 20v-7'/%3E%3Cpath class='st1' d='M13 .5h7'/%3E%3Cpath class='st2' d='M13 13h7'/%3E%3Cpath class='st1' d='M32.5 13v7'/%3E%3Cpath class='st2' d='M20 13v7'/%3E%3Cpath class='st1' d='M20 32.5h-7'/%3E%3Cpath class='st2' d='M20 20h-7'/%3E%3Cpath class='st1' d='M.5.5h3.1v3.1H.5zm3.1 3.1h3.1v3.1H3.6zm3.2 0h3.1v3.1H6.8zM3.6 6.8h3.1v3.1H3.6zm0 0H.5V13M13 .5H6.8v3.1M29.4.5h3.1v3.1h-3.1zm-3.1 3.1h3.1v3.1h-3.1zm0 3.2h3.1v3.1h-3.1zm-3.2-3.2h3.1v3.1h-3.1zm3.2 0V.5H20M32.5 13V6.8h-3.1M29.4 29.4h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M26.3 26.3h3.1v3.1h-3.1zm-3.2 0h3.1v3.1h-3.1zm3.2-3.2h3.1v3.1h-3.1z'/%3E%3Cpath class='st1' d='M29.4 26.3h3.1V20M20 32.5h6.3v-3.1'/%3E%3Cg%3E%3Cpath class='st1' d='M.5 29.4h3.1v3.1H.5zm3.1-3.1h3.1v3.1H3.6zm0-3.2h3.1v3.1H3.6zm3.2 3.2h3.1v3.1H6.8zM6.8 29.4v3.1H13M.5 20v6.3h3.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    --border-radius: 3px;
+    --border-radius-5: 5px;
+    --box-shadow: 0px 1px 3px 1px black;
+    --box-shadow-light: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4), inset 0px 0px 3px 1px var(--color-cool-3);
+
+    --bg3-blue: #183541;
+    --bg3-blue-light: #0c93bd;
+    --bg3-alliance-opposition-red: #de1847;
+    --button-hover-background: radial-gradient(circle, var(--bg3-alliance-opposition-red) 0, black 100%);
+    --button-toggle-hover-background: radial-gradient(circle, var(--bg3-blue-light) 0, var(--bg3-blue) 100%);
+    --text-color-1: #f7f3e8;
+    --button-hover-text-color: var(--text-color-1);
+
+    /*--color-rarity-common: #7e7e7e;*/
+    --color-rarity-common: var(--color-cool-1);
+    --color-rarity-uncommon: #ff6400;
+    --color-rarity-rare: #0062ff;
+    --color-rarity-unique: #e127e1;
+
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-border-color: var(--color-cool-3);
+    --input-focus-text-color: var(--color-light-2);
+    --input-text-color: var(--color-light-3);
+    --input-placeholder-color: var(--color-light-4);
+    --input-text-selection-color: var(--color-cool-3);
+    --input-focus-outline-color: var(--color-cool-3);
+
+
+/* Foundry2
+====================================================== */
+    --color-light-1: #f7f3e8;
+    --color-light-1-90: #f7f3e890;
+    --color-light-2: #efe6d8;
+    --color-light-2-90: #efe6d890;
+    --color-light-3: #e7d1b1;
+    --color-light-3-90: #e7d1b190;
+    --color-light-4: #d0b8a3;
+    --color-light-4-90: #d0b8a390;
+    --color-light-5: #9f8475;
+    --color-light-5-90: #9f847590;
+    --color-light-6: #816b66;
+    --color-light-6-90: #816b6690;
+    --color-warm-1: #ee9b3a;
+    --color-warm-1-90: #ee9b3a90;
+    --color-warm-2: #c9593f;
+    --color-warm-2-90: #c9593f90;
+    --color-warm-3: #5d142b;
+    --color-warm-3-90: #5d142b90;
+    --color-warm-4: #420418;
+    --color-warm-4-90: #42041890;
+    --color-warm-5: #26020d;
+    --color-warm-5-90: #26020d90;
+    --color-cool-1: #b1a0d4;
+    --color-cool-1-90: #b1a0d490;
+    --color-cool-2: #79689c;
+    --color-cool-2-90: #79689c90;
+    --color-cool-3: #584a75;
+    --color-cool-3-90: #584a7590;
+    --color-cool-4: #302831;
+    --color-cool-4-90: #30283190;
+    --color-cool-5: #0b0a13;
+    --color-cool-5-25: rgba(11, 10, 19, 0.25);
+    --color-cool-5-50: rgba(11, 10, 19, 0.5);
+    --color-cool-5-75: rgba(11, 10, 19, 0.75);
+    --color-cool-5-90: rgba(11, 10, 19, 0.9);
+
+    --color-level-error: #ce0707;
+    --color-level-error-bg: rgba(105, 0, 8, 0.8);
+    --color-level-error-border: #750003;
+    --color-level-info: #59a1f6;
+    --color-level-info-bg: rgba(47, 80, 132, 0.8);
+    --color-level-info-border: #5c87b9;
+    --color-level-success: #26b231;
+    --color-level-success-bg: rgba(26, 107, 34, 0.8);
+    --color-level-success-border: #1b8f23;
+    --color-level-warning: #ee9b3a;
+    --color-level-warning-bg: rgba(214, 150, 0, 0.8);
+    --color-level-warning-border: #b18404;
+    --color-scrollbar: #5d142b;
+    --color-scrollbar-border: #8d151b;
+
+
+/* PF2e Modifiers Matter
+====================================================== */
+    --pf2emm-color-essential: #008000;
+    --pf2emm-color-essential-outline: #008000bf;
+    --pf2emm-color-helpful: #91a82a;
+    --pf2emm-color-helpful-outline: #91a82abf;
+    --pf2emm-color-harmful: #ff0000;
+    --pf2emm-color-harmful-outline: #ff0000bf;
+    --pf2emm-color-detrimental: #ff852f;
+    --pf2emm-color-detrimental-outline: #ff852fbf;
+}
+
+
+/*PF2e Bestiary Tracking*/
+/*dark*/
+.theme-light .pf2e-bestiary-tracking.bestiary.application,
+.theme-dark .pf2e-bestiary-tracking.bestiary.application {
+    background: unset;
+}
+.pf2e-bestiary-tracking.bestiary .secondary-container,
+.theme-dark .pf2e-bestiary-tracking.bestiary .secondary-container {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-cool-4);
+    border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .primary-container.active,
+.theme-dark .pf2e-bestiary-tracking.bestiary .primary-container.active {
+    height: auto;
+    color: var(--color-warm-1);
+    background: var(--color-warm-3);
+}
+.pf2e-bestiary-tracking.bestiary .primary-container,
+.theme-dark .pf2e-bestiary-tracking.bestiary .primary-container {
+    color: var(--pfui-main-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .primary-container.empty,
+.theme-dark .pf2e-bestiary-tracking.bestiary .primary-container.empty {
+    opacity: 0.6;
+    filter: grayscale(1) blur(1px);
+}
+.pf2e-bestiary-tracking.bestiary .primary-container:hover,
+.theme-dark .pf2e-bestiary-tracking.bestiary .primary-container:hover {
+    color: var(--color-warm-1);
+    background: var(--color-warm-3);
+    opacity: 1 !important;
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .toggle-container,
+.theme-dark .pf2e-bestiary-tracking.bestiary .monster-container .toggle-container {
+    color: var(--color-light-2);
+    background: var(--color-cool-4);
+    border: 1px solid var(--color-cool-4);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .tertiary-container,
+.theme-dark .pf2e-bestiary-tracking.bestiary .tertiary-container {
+    background-color: var(--color-pf-secondary);
+    border-color: var(--color-cool-5);
+    color: var(--pfui-main-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .tertiary-container.active,
+.theme-dark .pf2e-bestiary-tracking.bestiary .tertiary-container.active {
+    background-color: var(--primary);
+}
+/*end*/
+
+.pf2e-bestiary-tracking {
+    border: unset;
+    box-shadow: unset;
+    text-shadow: var(--text-shadow);
+}
+.pf2e-bestiary-tracking .window-header {
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-cool-5-50);
+    border-radius: var(--border-radius);
+    margin: 0px 25px;
+    backdrop-filter: blur(5px);
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.pf2e-bestiary-tracking .window-header .window-title {
+    color: var(--color-warm-1);
+    font-size: large;
+    text-transform: uppercase;
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-welcome {
+    color: var(--color-light-3);
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-welcome .sub-title {
+    text-transform: uppercase;
+    color: var(--color-light-2);
+}
+.pf2e-bestiary-tracking.bestiary .type-overview-container {
+    color: var(--color-light-3);
+}
+.pf2e-bestiary-tracking.bestiary [data-application-part="application"] {
+    --color-text-dark-input: var(--color-text-light-heading);
+    box-shadow: var(--box-shadow);
+    background: var(--color-cool-5-25);
+    border-radius: var(--border-radius);
+    margin: 5px 10px 5px 10px;
+    padding: 2px 5px;
+    backdrop-filter: blur(15px);
+    color: var(--color-light-3);
+}
+.pf2e-bestiary-tracking.bestiary .window-content,
+.theme-dark .pf2e-bestiary-tracking.bestiary .window-content {
+    --color-text-dark-input: var(--color-text-light-heading);
+    box-shadow: unset;
+    background: unset;
+    border-radius: var(--border-radius);
+    margin: 5px 10px 5px 10px;
+    padding: 2px 5px;
+    backdrop-filter: unset;
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-header .return-container {
+    color: var(--pfui-main-grey-color);
+    text-shadow: var(--text-shadow);
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-header .return-container:hover {
+    color: var(--green);
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-header .bestiary-toolbar .bestiary-layout-settings {
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .monster-name-container .monster-return-icon {
+    color: var(--pfui-main-grey-color);
+    top: 5px;
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-header .bestiary-toolbar .bestiary-search-container input {
+    --input-background-color: var(--color-cool-4);
+    --input-border-color: transparent;
+    --input-text-color: var(--color-light-3);
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    color: var(--input-text-color);
+    --input-box-shadow: none;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 4px;
+    user-select: text;
+    transition: outline-color 0.5s;
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-header .bestiary-toolbar .bestiary-search-container input[type="text"]:focus {
+    outline: 1px solid var(--color-cool-2);
+}
+
+.pf2e-bestiary-clickable-icon:hover, 
+.pf2e-bestiary-clickable-icon.selected,
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .monster-name-container .monster-return-icon:hover,
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .actions-container .action-container .action-name:hover {
+    filter: unset;
+    color: var(--color-warm-2);
+}
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container,
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container.trio,
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container.quarter {
+    font-weight: 600;
+    color: var(--pfui-main-grey-color);
+    background: var(--color-warm-3);
+    border: 1px solid transparent;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container:hover :not(.delete-button:hover) {
+    background: unset;
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-tabs .bestiary-tab:hover,
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container:hover,
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container.trio:hover,
+.pf2e-bestiary-tracking.bestiary .type-overview-container .type-container.quarter:hover {
+    border: none;
+    background: none;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+    text-shadow: var(--text-shadow);
+    color: var(--color-cool-5);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .bestiary-fakable-container {
+    border: unset;
+    color: var(--color-light-3);
+
+}
+.pf2e-bestiary-tracking.bestiary .flexcol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    border-width: 0 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: var(--box-shadow);
+    background: var(--color-cool-5-25);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(15px);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .monster-name-container .monster-name.toggle-container {
+    text-transform: uppercase;
+    color: var(--color-warm-1);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .data-header {
+    color: var(--color-light-3);
+    background: radial-gradient(var(--primary-remaster), var(--glass-bg-dark));
+    border: none;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .right-monster-container-data {
+    gap: 10px;
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .data-body {
+    padding: 10px;
+    border-width: 0 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: var(--box-shadow);
+    background: var(--color-cool-5-50);
+    border-radius: var(--border-radius);
+    gap: 5px;
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .monster-traits-row,
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .bestiary-notes-page .bestiary-notes-legend {
+    border: 3px solid transparent;
+    box-shadow: var(--box-shadow);
+    background: var(--color-cool-5-50);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .left-monster-container .monster-image {
+    --color-text-dark-input: var(--color-text-light-heading);
+    box-shadow: var(--box-shadow);
+    background: var(--color-cool-5-75);
+    border-radius: var(--border-radius);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .toggle-container.revealed {
+    background: var(--green);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+    color: var(--color-cool-5);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .spell-list-container table {
+    max-width: 100%;
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .spell-list-container {
+    border-color: transparent;
+    border-style: unset;
+    border-radius: var(--border-radius);
+    margin: 5px 0 0 0;
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .spell-list-container .spell-body-row.description.expanded {
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-cool-5-25);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .spell-list-container .spell-header-row:first-of-type {
+    border-top-width: unset;
+    background: radial-gradient(var(--primary-remaster), var(--color-cool-5));
+    text-shadow: var(--text-shadow);
+}
+.pf2e-bestiary-tracking.bestiary .monster-container .right-monster-container .spell-list-container .spell-header-row {
+    background: radial-gradient(var(--primary-remaster), var(--color-cool-5));
+    text-shadow: var(--text-shadow);
+}

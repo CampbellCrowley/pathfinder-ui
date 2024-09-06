@@ -23,9 +23,9 @@ canvas#board.rpg-ui-hover-token {
 .chat-card-button {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
-.draggable{
+/*.draggable{
     cursor:url(../ui/cursors/drag.webp), move; 
-}
+}*/
 #hotbar .macro{
     cursor:url(../ui/cursors/pointer.webp), pointer; 
 }
@@ -229,7 +229,16 @@ button:disabled {
 .actor.sheet.character .crb-style .sheet-body .sheet-content .tab.spellcasting .spellcasting-entry .spell-ability-data .focus-pool {
     cursor: url(../ui/cursors/pointer.webp), pointer;
 }
-
+.actor.sheet.character section.window-content .crb-style select.pf-rank {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.action button.use-action:not(:disabled), 
+.actor.sheet section.window-content form.crb-style .sheet-body .sheet-content .tab.actions ol.actions-list li.strike button.use-action:not(:disabled) {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
+.attribute-builder .window-content .row-column button.flaw {
+    cursor: url(../ui/cursors/pointer.webp), pointer;
+}
 
 /* PF2e NPC Sheet */
 .actor.npc.sheet form ol.spell-list > li .item-name h4 {
@@ -342,9 +351,9 @@ button:disabled {
 
 /* Monk's TokenBar */
 /* https://github.com/ironmonk88/monks-tokenbar */
-#tokenbar .bar-controls div#tokenbar-move-handle {
+/*#tokenbar .bar-controls div#tokenbar-move-handle {
     cursor:url(../ui/cursors/drag.webp), move;
-}
+}*/
 #tokenbar:not(.hidectrl) .bar-controls .tokenbar-buttons div i {
     cursor:url(../ui/cursors/pointer.webp), pointer;
 }
