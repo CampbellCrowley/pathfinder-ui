@@ -104,8 +104,10 @@
     --color-level-warning-border: #b18404;
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
-
+}
+.dark-theme.red {
     --color-pf-primary: var(--color-text-light-primary);
+    --green: white;
 }
 
 /*************************************************************/
@@ -139,10 +141,117 @@
     backdrop-filter: unset;
 }
 .actor.sheet.dark-theme.red section.window-content {
-    background-image: url("../systems/pf2e/assets/sheet/header.webp");
+    background: unset;
 }
 .actor.sheet.dark-theme.red section.window-content form.crb-style {
-    background: url("../assets/sheet/header.webp");
+    background-image: url("../systems/pf2e/assets/sheet/header.webp");
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.proficiencies ul.proficiencies-list li {
+    color: var(--color-text-light-highlight);
+}
+.dark-theme.red input[type="checkbox"] {
+    filter; invert(1);
+}
+.actor.sheet.dark-theme.red section.window-content form.crb-style .sheet-body .sheet-content,
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.details .abcd .detail h3 {
+    color: var(--color-text-light-primary);
+}
+.tags.light > .tag, .tags > .tag.light,
+.dark-theme.red .crb-style .details-label {
+    color: var(--color-text-light-heading);
+}
+.actor.sheet.dark-theme.red section.window-content form.crb-style nav.sub-nav {
+    background-color: var(--pf2e-half-transparent-dark);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .label {
+  color: var(--color-pf-alternate-light);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .value,
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .value.rollable svg path {
+  color: var(--color-text-light-primary);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .value i {
+  color: var(--color-pf-alternate-light);
+}
+.actor.sheet.dark-theme.red section.window-content form.crb-style .sheet-body .sheet-content .directory-list .action-header,
+.actor.sheet.character.dark-theme.red section.window-content .crb-style aside .sidebar header button {
+  background: var(--color-text-dark-4);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style aside select {
+  background-color: unset;
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.biography section.editable .editor, .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.biography section.editable input,
+.actor.sheet.dark-theme.red section.window-content form.crb-style .sheet-body .sheet-content ol.spell-list > li .item-summary,
+.actor.sheet section.window-content .inventory ul.items > li .item-summary,
+.actor.sheet.dark-theme section.window-content .inventory ul.items > li .item-summary {
+  background: rgba(255,255,255,.05);
+}
+.actor.sheet.dark-theme.red section.window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested, .actor.sheet.dark-theme.red section.window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type {
+  color: rgba(255, 255, 255, 0.5);
+}
+.actor.sheet.dark-theme.red section.window-content .inventory ul.items > li > .data .item-controls > a.toggle-invested.active, .actor.sheet.dark-theme.red section.window-content .inventory ul.items > li > .data .item-controls > a.item-carry-type.active,
+.actor.sheet.dark-theme.red section.window-content form.crb-style .sheet-body .sheet-content ol.spell-list > li .item-name h4 > a:hover,
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.feats ol.feats-list li.slot .item-name .feat-slot-title,
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting .spellcasting-entry .spell-ability-data .skill-score {
+  color: var(--color-pf-secondary-lighter);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.known-formulas ol.formula-list li.formula-level-header.formula-level-header, .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.known-formulas ol.formula-list li.formula-item.formula-level-header, .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.crafting-entry ol.formula-list li.formula-level-header.formula-level-header, .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.crafting li.crafting-entry ol.formula-list li.formula-item.formula-level-header,
+.actor.sheet.dark-theme.red section.window-content .inventory ul.items > li > .data .item-controls {
+  color: var(--text-light);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.spellcasting .spellcasting-entry .rollable .d20-svg path {
+  fill: var(--color-text-light-1);
+}
+.actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.biography section .editor .editor-edit {
+  color: var(--text-dark);
+}
+.dark-theme.red .crb-style .details-input {
+  color: unset;
+}
+.sheet.journal-entry.dark-custom .journal-entry-content {
+  background: unset;
+}
+.sheet.journal-entry.dark-custom.dark .journal-entry-pages {
+  color: var(--color-text-light-primary);
+}
+.sheet.party.dark-party-theme form {
+  background: unset;
+}
+.actor.sheet.dark-party-theme section.window-content {
+  background: unset;
+  color: var(--color-text-light-primary);
+}
+.sheet.party.dark-party-theme [data-tab=overview] .member > .data header .hero-points .empty {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.sheet.party.dark-party-theme .tag-light {
+  --tag-color: var(--color-pf-alternate-light);
+}
+.sheet.party.dark-party-theme [data-tab=overview] .skills .tag-light[data-rank="1"] {
+  --tag-color: var(--color-pf-secondary-lighter);
+}
+.sheet.party.dark-party-theme [data-tab=overview] .skills .tag-light[data-rank="2"] {
+  --tag-color: var(--color-text-selection-bg);
+}
+.sheet.party.dark-party-theme [data-tab=overview] .skills .tag-light[data-rank="4"] {
+  --tag-color: var(--color-pf-primary-light);
+}
+.sheet.party.dark-party-theme nav.sub-nav {
+  background-color: var(--pf2e-half-transparent-dark);
+}
+.sheet.party.dark-party-theme nav.sub-nav a:hover, .sheet.party.dark-party-theme nav.sub-nav a.active {
+  color: var(--color-text-light-primary);
+}
+.sheet.party.dark-party-theme .sidebar .box-list,
+.sheet.party.dark-party-theme [data-tab=exploration] .activities .member-activity .empty .hint,
+.sheet.party.dark-party-theme [data-tab=overview] .member > .data header .blurb {
+  color: var(--alt);
+}
+.sheet.party.dark-party-theme [data-tab=exploration] .activities .member-activity .empty .name {
+  color: var(--color-pf-primary-lighter);
+}
+.sheet.party.dark-party-theme [data-tab=overview] .member > .data .main-stats .ac .value {
+  color: var(--color-pf-secondary-lighter);
 }
 form .notes, 
 form .hint {
@@ -586,6 +695,9 @@ form .form-group.slim .form-fields > label {
 }
 textarea {
     color: var(--green);
+}
+.theme-dark textarea#chat-message {
+    color: var(--color-text-dark-primary);
 }
 #support-report {
     border: 2px dashed var(--color-cool-4);
