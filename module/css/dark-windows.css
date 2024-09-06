@@ -105,6 +105,7 @@
     --color-scrollbar: #5d142b;
     --color-scrollbar-border: #8d151b;
 
+    --color-pf-primary: var(--color-text-light-primary);
 }
 
 /*************************************************************/
@@ -133,11 +134,14 @@
     color: var(--input-text-color);
 }
 .actor.sheet section.window-content {
-    /* background: url(../ui/frames/parchment.webp) repeat; */
+    background: url(../ui/frames/parchment.webp) repeat;
     color: var(--color-text-dark-primary);
     backdrop-filter: unset;
 }
-.actor.sheet section.window-content form.crb-style {
+.actor.sheet.dark-theme.red section.window-content {
+    background-image: url("../systems/pf2e/assets/sheet/header.webp");
+}
+.actor.sheet.dark-theme.red section.window-content form.crb-style {
     background: url("../assets/sheet/header.webp");
 }
 form .notes, 

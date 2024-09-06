@@ -240,7 +240,7 @@ function rpgUIAddMainCss() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pathfinderui.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/pathfinderui.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -249,7 +249,7 @@ function rpgUIAddDarkWindows() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/dark-windows.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/dark-windows.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -257,7 +257,7 @@ function rpgUIAddTokenEffectsHud() {
     const head = document.getElementsByTagName("head")[0];
     const mainCss = document.createElement("script");
     mainCss.setAttribute("type", "text/javascript")
-    mainCss.setAttribute("src", "modules/pathfinder-ui/scripts/status-halo.js")
+    mainCss.setAttribute("src", "modules/pathfinder-ui-spike/scripts/status-halo.js")
     head.insertBefore(mainCss, head.lastChild);
 
     setTimeout(() => enableStatusHalo(), 500);
@@ -267,7 +267,7 @@ function rpgUIAddTokenHud() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/hud.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/hud.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -277,7 +277,7 @@ function rpgUIAddPf2eHud() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-hud.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/pf2e-hud.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -287,7 +287,7 @@ function rpgUIAddPf2eBestiaryTracking() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/pf2e-bestiary-tracking.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/pf2e-bestiary-tracking.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -297,7 +297,7 @@ function rpgUIAddJournalSheet() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/journal-sheet.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/journal-sheet.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -307,7 +307,7 @@ function rpgUIAddCursor() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/pathfinder-ui/css/cursor.css")
+	mainCss.setAttribute("href", "modules/pathfinder-ui-spike/css/cursor.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
@@ -317,7 +317,7 @@ Hooks.on('renderSidebarTab', async (object, html) => {
 	if (object instanceof Settings) {
 	  const details = html.find('#game-details')
 	  const list = document.createElement('ul')
-	  list.innerHTML = await renderTemplate('modules/pathfinder-ui/templates/settings-info.hbs')
+	  list.innerHTML = await renderTemplate('modules/pathfinder-ui-spike/templates/settings-info.hbs')
 	  details.append(list.firstChild)
 	}
   })
