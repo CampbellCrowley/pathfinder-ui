@@ -133,9 +133,12 @@
     color: var(--input-text-color);
 }
 .actor.sheet section.window-content {
-    background: url(../ui/frames/parchment.webp) repeat;
+    /* background: url(../ui/frames/parchment.webp) repeat; */
     color: var(--color-text-dark-primary);
     backdrop-filter: unset;
+}
+.actor.sheet section.window-content form.crb-style {
+    background: url("../assets/sheet/header.webp");
 }
 form .notes, 
 form .hint {

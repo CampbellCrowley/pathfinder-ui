@@ -1,5 +1,5 @@
 # Forked from https://gitlab.com/sasmira/pathfinder-ui
-Because I didn't like the green.
+Because I didn't like some dark-theme stuff.
 
 # FoundryVTT - Pathfinder-ui v3
 A dodgy fork of RPG Styled Ui by Xbozon for Pathfinder 2e.
@@ -10,7 +10,7 @@ To install, follow these instructions:
 
 1.  Inside Foundry, select the Game Modules tab in the Configuration and Setup menu.
 2.  Click the Install Module button and enter the following URL: 
-https://raw.githubusercontent.com/CampbellCrowley/pathfinder-ui/master/module/module.json
+https://raw.githubusercontent.com/CampbellCrowley/pathfinder-ui/main/module/module.json
 3.  Click Install and wait for installation to complete.
 
 ## Pathfinder Ui v3, it's :

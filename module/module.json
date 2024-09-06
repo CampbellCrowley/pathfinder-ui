@@ -9,9 +9,16 @@
       "url": "https://gitlab.com/sasmira",
       "discord": "Sasmira",
       "flags": {}
+    },
+    {
+      "name": "Campbell Crowley",
+      "email": "github@campbellcrowley.com",
+      "url": "https://github.com/CampbellCrowley",
+      "discord": "spikeyrobot",
+      "flags": {}
     }
   ],
-  "version": "12.331.631.2.1",
+  "version": "12.331.631.2.2",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
