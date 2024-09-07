@@ -169,6 +169,7 @@
 .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .value,
 .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .value.rollable svg path {
   color: var(--color-text-light-primary);
+  fill: var(--color-text-light-primary);
 }
 .actor.sheet.character.dark-theme.red section.window-content .crb-style .sheet-body .sheet-content > .tab.active.character .subsection.speeds .speed .value i {
   color: var(--color-pf-alternate-light);
