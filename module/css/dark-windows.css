@@ -353,7 +353,6 @@ input[type="password"],
     background: var(--input-background-color);
     border: 1px solid var(--input-border-color);
     outline: 1px solid transparent;
-    color: var(--input-text-color);
     --input-box-shadow: none;
     box-shadow: var(--input-box-shadow);
     border-radius: 4px;
@@ -368,7 +367,6 @@ input[type="time"]:focus,
 input[type="search"]:focus {
     box-shadow: none;
     outline: 1px solid #584a75;
-    color: var(--color-light-3);
 }
 input[type="range"] + .range-value {
     border: unset;
@@ -699,6 +697,9 @@ textarea {
 }
 .theme-dark textarea#chat-message {
     color: var(--color-text-dark-primary);
+}
+.theme-dark .chat-message.emote > .message-content p.action-content a.content-link {
+    background: var(--custom-trait);
 }
 #support-report {
     border: 2px dashed var(--color-cool-4);
